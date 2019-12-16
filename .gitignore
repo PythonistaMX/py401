@@ -107,7 +107,10 @@ venv.bak/
 # directorio de prueba
 prueba/
 demo/
+webroot/
 
 # credenciales
 
-	contrasena.txt
+contrasena.txt
+*.tar
+

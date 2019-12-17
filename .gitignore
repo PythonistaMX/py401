@@ -107,6 +107,8 @@ venv.bak/
 # directorio de prueba
 prueba/
 demo/
+nuevo/
+experimental/
 webroot/
 
 # credenciales

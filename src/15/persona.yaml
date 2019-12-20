@@ -1,0 +1,27 @@
+personas:
+    1001:
+        nombre: Juan
+        primer_apellido: Pérez
+        segundo_apellido: de la Rosa
+        carrera: Derecho
+        cursos:
+            - py101: AC
+            - py111: AC
+            - py121: NA
+            - py131:
+                programado:
+                    clave_evento: py131-2007
+                    fecha_inicio: 15/07/2020
+                    requisitos:
+                        - py101
+                        - py111
+            -py201: NA
+    1002:
+        nombre: María
+        primer_apellido: Mendoza
+        segundo_apellido: ""
+        carrera: Derecho
+        cursos:
+            - py101: AC
+            - py111: AC
+            -py121: AC

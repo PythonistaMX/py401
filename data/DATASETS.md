@@ -2,7 +2,7 @@
 
 Los *datasets* del Proyecto integrador **no vienen en el repositorio**. Cada quien descarga el suyo a `data/proyecto/`, una carpeta que está en `.gitignore`, así que no se sube a GitHub (basta con documentar la fuente en el informe). Los datos de las sesiones (`penguins`, `titanic`, `tips`, `mpg`) sí vienen en `data/` y no requieren internet.
 
-Las URL de esta página se probaron el 18 de octubre de 2026 (hora de la Ciudad de México). Los tamaños y las dimensiones son los de esa fecha.
+Las URL de esta página se probaron al preparar el curso; los tamaños y las dimensiones son los de esa revisión y pueden cambiar si la fuente actualiza sus archivos.
 
 | Clave | *Dataset* | Filas × columnas | CSV | ZIP original | Licencia |
 |---|---|---|---|---|---|
@@ -27,7 +27,7 @@ python tools/descargar_datasets.py todos --originales   # todos, más los ZIP of
 * `--forzar` vuelve a descargar aunque el archivo exista; `--destino` cambia la carpeta.
 * Solo usa la biblioteca estándar y *pandas*: no hay que instalar nada más.
 
-Desde un *notebook* (el 07 y la plantilla del proyecto ya traen esta celda), basta con elegir la clave:
+Desde un *notebook* (`24_reproducibilidad_y_arranque_del_proyecto.ipynb` y la plantilla del proyecto ya traen esta celda), basta con elegir la clave:
 
 ```python
 import os, sys

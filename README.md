@@ -16,7 +16,7 @@ Página del curso: <https://www.pythonista.io/eventos/py401>
 
 ### Prerequisitos recomendados
 
-Este curso asume conocimiento previo de *Python* y nociones básicas de *NumPy* y *pandas* (la sesión 1 las repasa).
+Este curso asume conocimiento previo de *Python* y nociones básicas de *NumPy* y *pandas* (los notebooks `02` y `03` las repasan).
 
 | Curso | Título | Repositorio |
 | :--- | :--- | :--- |
@@ -43,71 +43,103 @@ Todo el entorno se ejecuta en la nube mediante **GitHub Codespaces**, sin necesi
 
 ## 📅 Temario y Estructura
 
-El curso consta de **8 sesiones de 2 horas**, de lunes a jueves de **6:30 a 8:30 pm (hora de la Ciudad de México)**, del 19 al 29 de octubre de 2026, divididas en 4 módulos:
+El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. Los *notebooks* se numeran por tema y cada sesión abarca varios (la correspondencia entre sesiones y *notebooks* está en [`INSTRUCTOR_GUIDE.md`](INSTRUCTOR_GUIDE.md)). Las fechas y el horario de cada edición se publican en la [página del curso](https://www.pythonista.io/eventos/py401) y en Google Classroom.
 
-| # | Fecha | Módulo | Temas | Notebook |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Lun 19 oct | I. Datos y su calidad | *NumPy* y *pandas* esenciales; tipos de variables; sesgos de recolección | [01](01_numpy_pandas_esenciales.ipynb) |
-| 2 | Mar 20 oct | I. Datos y su calidad | Duplicados, inconsistencias y valores faltantes | [02](02_calidad_y_faltantes.ipynb) |
-| 3 | Mié 21 oct | II. Describir y comparar | Estadística descriptiva; forma de la distribución; valores atípicos | [03](03_descriptiva_distribuciones.ipynb) |
-| 4 | Jue 22 oct | II. Describir y comparar | Agregación; relaciones; correlación vs. causalidad; visualización efectiva | [04](04_agregacion_relaciones_visualizacion.ipynb) |
-| 5 | Lun 26 oct | III. Inferencia estadística | Muestreo, error estándar, intervalos de confianza, *bootstrap* | [05](05_incertidumbre_bootstrap.ipynb) |
-| 6 | Mar 27 oct | III. Inferencia estadística | Pruebas *t*, proporciones, chi cuadrada, ANOVA; supuestos; tamaño del efecto | [06](06_pruebas_hipotesis_efecto.ipynb) |
-| 7 | Mié 28 oct | IV. Proyecto integrador | EDA completo paso a paso | [07](07_eda_completo.ipynb) |
-| 8 | Jue 29 oct | IV. Proyecto integrador | Redacción y presentación del informe de hallazgos | [08](08_informe_hallazgos.ipynb) |
+| Módulo | Temas | Notebooks |
+| :--- | :--- | :--- |
+| I. Datos y su calidad | *NumPy* y *pandas* esenciales; tipos de variables; sesgos de recolección; duplicados, inconsistencias y valores faltantes | `01`-`09` |
+| II. Describir y comparar | Estadística descriptiva; forma de la distribución; valores atípicos; agregación; relaciones; correlación vs. causalidad; visualización efectiva | `10`-`15` |
+| III. Inferencia estadística | Muestreo, error estándar, intervalos de confianza, *bootstrap*; pruebas *t*, proporciones, chi cuadrada, ANOVA; supuestos; tamaño del efecto | `16`-`22` |
+| IV. Proyecto integrador | EDA completo paso a paso; redacción y presentación del informe de hallazgos | `23`-`26` |
 
 ### Evaluaciones (en Google Classroom)
 
 | Evaluación | Se publica | Cierra | Composición |
 | :--- | :--- | :--- | :--- |
-| Evaluación semanal 1 (Módulos I y II) | Jue 22 oct, 8:30 pm | Dom 25 oct, 11:59 pm | Cuestionario (40) + notebook (60) |
-| Evaluación semanal 2 (Módulos III y IV) | Jue 29 oct, 8:30 pm | Dom 1 nov, 11:59 pm | Cuestionario (30) + Proyecto integrador (70) |
+| Evaluación semanal 1 (Módulos I y II) | Al terminar la sesión 4 | Al final de la semana 1 | Cuestionario (40) + notebook (60) |
+| Evaluación semanal 2 (Módulos III y IV) | Al terminar la sesión 8 | Al final de la semana 2 | Cuestionario (30) + Proyecto integrador (70) |
 
-**Diploma:** calificación final = (E1 + E2) / 2 **≥ 70** y asistencia a **al menos 7 de las 8 sesiones**. Horarios en hora de la Ciudad de México.
+**Diploma:** calificación final = (E1 + E2) / 2 **≥ 70** y asistencia a **al menos 7 de las 8 sesiones**. Las fechas y horas exactas de cada evaluación se anuncian en Classroom.
 
 ### 📚 Contenidos
 
 #### 🧭 Tabla de contenidos (enlaces rápidos)
-- [01_numpy_pandas_esenciales.ipynb](01_numpy_pandas_esenciales.ipynb)
-- [02_calidad_y_faltantes.ipynb](02_calidad_y_faltantes.ipynb)
-- [03_descriptiva_distribuciones.ipynb](03_descriptiva_distribuciones.ipynb)
-- [04_agregacion_relaciones_visualizacion.ipynb](04_agregacion_relaciones_visualizacion.ipynb)
-- [05_incertidumbre_bootstrap.ipynb](05_incertidumbre_bootstrap.ipynb)
-- [06_pruebas_hipotesis_efecto.ipynb](06_pruebas_hipotesis_efecto.ipynb)
-- [07_eda_completo.ipynb](07_eda_completo.ipynb)
-- [08_informe_hallazgos.ipynb](08_informe_hallazgos.ipynb)
+- [01_bienvenida_y_reglas_del_curso.ipynb](01_bienvenida_y_reglas_del_curso.ipynb)
+- [02_numpy_esencial.ipynb](02_numpy_esencial.ipynb)
+- [03_pandas_3_esencial.ipynb](03_pandas_3_esencial.ipynb)
+- [04_tipos_de_variables.ipynb](04_tipos_de_variables.ipynb)
+- [05_muestreo_y_sesgos_de_recoleccion.ipynb](05_muestreo_y_sesgos_de_recoleccion.ipynb)
+- [06_diccionario_de_datos.ipynb](06_diccionario_de_datos.ipynb)
+- [07_duplicados_e_inconsistencias.ipynb](07_duplicados_e_inconsistencias.ipynb)
+- [08_valores_faltantes.ipynb](08_valores_faltantes.ipynb)
+- [09_auditoria_de_calidad.ipynb](09_auditoria_de_calidad.ipynb)
+- [10_tendencia_central_y_dispersion.ipynb](10_tendencia_central_y_dispersion.ipynb)
+- [11_forma_de_la_distribucion.ipynb](11_forma_de_la_distribucion.ipynb)
+- [12_valores_atipicos_y_transformaciones.ipynb](12_valores_atipicos_y_transformaciones.ipynb)
+- [13_agregacion.ipynb](13_agregacion.ipynb)
+- [14_relaciones_entre_variables.ipynb](14_relaciones_entre_variables.ipynb)
+- [15_visualizacion_efectiva.ipynb](15_visualizacion_efectiva.ipynb)
+- [16_distribucion_muestral.ipynb](16_distribucion_muestral.ipynb)
+- [17_error_estandar_e_intervalos_de_confianza.ipynb](17_error_estandar_e_intervalos_de_confianza.ipynb)
+- [18_bootstrap_e_interpretacion_de_intervalos.ipynb](18_bootstrap_e_interpretacion_de_intervalos.ipynb)
+- [19_logica_del_contraste.ipynb](19_logica_del_contraste.ipynb)
+- [20_pruebas_para_dos_grupos.ipynb](20_pruebas_para_dos_grupos.ipynb)
+- [21_proporciones_y_mas_de_dos_grupos.ipynb](21_proporciones_y_mas_de_dos_grupos.ipynb)
+- [22_tamano_del_efecto.ipynb](22_tamano_del_efecto.ipynb)
+- [23_eda_completo_con_mpg.ipynb](23_eda_completo_con_mpg.ipynb)
+- [24_reproducibilidad_y_arranque_del_proyecto.ipynb](24_reproducibilidad_y_arranque_del_proyecto.ipynb)
+- [25_estructura_del_informe_y_comunicacion.ipynb](25_estructura_del_informe_y_comunicacion.ipynb)
+- [26_del_notebook_al_informe.ipynb](26_del_notebook_al_informe.ipynb)
 
 #### 🔹 Módulo I: Datos y su calidad
-* `01` - *NumPy* esencial (arreglos, `dtype`, vectorización, *broadcasting*, máscaras), *pandas* esencial (`info`, `describe`, `loc`/`iloc`, filtros, `assign`), tipos de variables (taxonomía, escalas de Stevens, `category`, tipos *nullable*, fechas), muestreo y sesgos de recolección.
-* `02` - Lista de verificación de calidad, duplicados exactos y por llave, inconsistencias, mecanismos de faltantes (MCAR, MAR, MNAR) e imputación; genera `data/penguins_limpio.csv`.
+* `01` - Bienvenida, reglas de evaluación, asistencia y diploma; arranque del *Codespace*.
+* `02` - *NumPy* esencial: arreglos, `dtype`, vectorización, *broadcasting*, máscaras y decisiones que cambian resultados (`ddof`, `NaN`, desbordamiento, flotantes).
+* `03` - *pandas* 3 esencial: *Copy-on-Write*, tipo `str`, `read_csv`, `info`, `describe`, `loc`/`iloc`, filtros, `assign` y faltantes silenciosos.
+* `04` - Tipos de variables: taxonomía, escalas de Stevens, `dtype` de *pandas* 3, `category`, tipos *nullable* y fechas.
+* `05` - Muestreo (población, marco, parámetro y estadístico; diseños comparados por simulación) y sesgos de recolección.
+* `06` - Ejercicio guiado: diccionario de datos de `penguins`.
+* `07` - Lista de verificación de calidad, duplicados exactos y por llave, inconsistencias de texto, categorías, rangos, centinelas y unidades.
+* `08` - Mecanismos de faltantes (MCAR, MAR, MNAR), perfil de faltantes, tratamiento e imputación y su efecto.
+* `09` - Auditoría de calidad de `titanic` y `penguins`; genera `data/penguins_limpio.csv`.
 
 #### 🔹 Módulo II: Describir y comparar
-* `03` - Tendencia central y dispersión, forma de la distribución (histograma, KDE, ECDF, *boxplot*) y valores atípicos (IQR, *z* robusto).
-* `04` - `groupby`/`agg`, `pivot_table`, `crosstab`, `melt`; Pearson y Spearman; paradoja de Simpson; visualización efectiva.
+* `10` - Tendencia central y dispersión: medidas clásicas y robustas (mediana, IQR, MAD).
+* `11` - Forma de la distribución: asimetría, curtosis, multimodalidad; histograma, KDE, ECDF y *boxplot*.
+* `12` - Valores atípicos (IQR, *z*, *z* robusto), ¿error o valor real?, transformación logarítmica y ejercicio integrador.
+* `13` - Agregación: `groupby`/`agg`, `pivot_table`, `crosstab` y `melt`.
+* `14` - Relaciones entre variables: Pearson y Spearman, correlación vs. causalidad, confusores y paradoja de Simpson.
+* `15` - Visualización efectiva con *Matplotlib* y *Seaborn*, ejercicio de la sesión y Evaluación semanal 1.
 
 #### 🔹 Módulo III: Inferencia estadística
-* `05` - Distribución muestral (ley de los grandes números, teorema central del límite, tamaño de muestra y diseño estratificado), error estándar, intervalos de confianza y *bootstrap* (`scipy.stats`, *statsmodels*).
-* `06` - *t* de Welch, Mann-Whitney, permutación, proporciones, chi cuadrada, ANOVA y Tukey; tamaño del efecto.
+* `16` - Distribución muestral: ley de los grandes números, teorema central del límite, tamaño de muestra y diseño estratificado.
+* `17` - Error estándar e intervalos de confianza para medias y proporciones (Wald, Wilson, Clopper-Pearson); cobertura.
+* `18` - *Bootstrap* (`scipy.stats.bootstrap`), interpretación correcta de un IC y consigna del Proyecto integrador.
+* `19` - Lógica del contraste: H0/H1, valor *p*, errores tipo I y II, potencia.
+* `20` - Dos grupos: *t* de Student y de Welch, Mann-Whitney y permutación.
+* `21` - Proporciones y chi cuadrada; más de dos grupos: Levene, ANOVA, Welch y Tukey; comparaciones múltiples.
+* `22` - Tamaño del efecto: d de Cohen, V de Cramér y η².
 
 #### 🔹 Módulo IV: Proyecto integrador
-* `07` - EDA completo y reproducible sobre `mpg`; arranque del proyecto.
-* `08` - Informe de hallazgos y exportación con `nbconvert`.
+* `23` - EDA completo y reproducible sobre `mpg`, paso a paso.
+* `24` - Buenas prácticas de reproducibilidad y arranque del Proyecto integrador (descarga del *dataset*, preguntas y auditoría).
+* `25` - Estructura del informe de hallazgos; comunicar IC y tamaños del efecto en lenguaje llano; gráfica final; qué no afirmar.
+* `26` - Del *notebook* al informe con `nbconvert`, revisión entre pares, presentaciones, Evaluación semanal 2 y cierre del curso.
 
 Materiales de evaluación:
 
 * `evaluaciones/eval1_eda_descriptivo.ipynb` - Consigna, rúbrica y esqueleto del *notebook* de la Evaluación semanal 1 (`tips`).
 * `proyecto/plantilla_proyecto_integrador.ipynb` - Plantilla del Proyecto integrador (Evaluación semanal 2), con la estructura del EDA y del informe; descarga el *dataset* elegido a `data/proyecto/` y corre completa con `mpg.csv` mientras no se elija uno.
 
-> **📝 Nota:** Cada notebook incluye ejercicios básicos 🟢 y retos opcionales 🔴. Las celdas `# TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti. Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`).
+> **📝 Nota:** Los notebooks con práctica incluyen ejercicios básicos 🟢 y retos opcionales 🔴. Las celdas `# TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti. Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`); `01`, `23` y `25` no tienen ejercicios. Cada notebook es independiente y se puede abrir y ejecutar por separado.
 
 #### 📁 Datos (`data/`)
-* `penguins.csv` - Palmer Penguins, dataset principal (sesiones 1–6).
-* `penguins_limpio.csv` - versión limpia que genera el notebook 02 (desde la sesión 3).
-* `titanic.csv` - apoyo (sesiones 2 y 6).
-* `tips.csv` - apoyo (sesión 4 y Evaluación 1).
-* `mpg.csv` - demostración de EDA completo (sesión 7).
+* `penguins.csv` - Palmer Penguins, dataset principal (notebooks `03` a `22`).
+* `penguins_limpio.csv` - versión limpia que genera `09_auditoria_de_calidad.ipynb` (se usa desde `10`; si falta, cada notebook la regenera).
+* `titanic.csv` - apoyo (calidad, proporciones e inferencia).
+* `tips.csv` - apoyo (agregación, relaciones, pruebas y Evaluación 1).
+* `mpg.csv` - demostración de EDA completo (`23` y `24`) y respaldo del Proyecto integrador.
 
-Los CSV provienen de [`mwaskom/seaborn-data`](https://github.com/mwaskom/seaborn-data), el repositorio que usa `sns.load_dataset()`. En el CSV de `penguins`, `sex` viene como `MALE`/`FEMALE` (en `sns.load_dataset("penguins")` es `Male`/`Female`); el notebook 02 hace esa homologación.
+Los CSV provienen de [`mwaskom/seaborn-data`](https://github.com/mwaskom/seaborn-data), el repositorio que usa `sns.load_dataset()`. En el CSV de `penguins`, `sex` viene como `MALE`/`FEMALE` (en `sns.load_dataset("penguins")` es `Male`/`Female`); `09_auditoria_de_calidad.ipynb` hace esa homologación.
 
 #### 📦 Datasets del Proyecto integrador
 
@@ -128,7 +160,7 @@ python tools/descargar_datasets.py wine                 # uno o varios: diamonds
 python tools/descargar_datasets.py todos --originales   # todos, más los ZIP oficiales del UCI
 ```
 
-El notebook `07` y la plantilla del proyecto traen una celda que hace lo mismo con solo escribir la clave en `DATASET_PROYECTO`. **Sin internet:** sube el CSV descargado en otra computadora a `data/proyecto/<clave>.csv` desde el explorador del *Codespace*; si no hay archivo ni conexión, las celdas avisan y usan `mpg.csv` para que puedas seguir trabajando.
+El notebook `24` y la plantilla del proyecto traen una celda que hace lo mismo con solo escribir la clave en `DATASET_PROYECTO`. **Sin internet:** sube el CSV descargado en otra computadora a `data/proyecto/<clave>.csv` desde el explorador del *Codespace*; si no hay archivo ni conexión, las celdas avisan y usan `mpg.csv` para que puedas seguir trabajando.
 
 ---
 
@@ -145,9 +177,9 @@ El entorno se iniciará automáticamente con:
 * Extensiones de *Python* y *Jupyter* para VS Code
 * Todas las librerías del curso instaladas según las versiones mínimas de `requirements.txt`: *NumPy*, *pandas*, *Matplotlib*, *Seaborn*, *SciPy* y *statsmodels*.
 
-> ⚠️ **ADVERTENCIA: el curso usa *pandas* 3.** *pandas* 3.0 (enero de 2026) es una gran actualización de arquitectura: Copy-on-Write es obligatorio y el texto se guarda por defecto con el tipo `str` respaldado por PyArrow. Es **incompatible hacia atrás**: código escrito para *pandas* 2.x (asignación encadenada como `df["col"][fila] = valor`, `inplace=True` sobre una columna, comprobaciones de `dtype == object` para texto) puede cambiar de comportamiento o fallar sin error visible. El notebook `01` lo explica con ejemplos; consulta también las [notas de versión de *pandas* 3.0](https://pandas.pydata.org/docs/whatsnew/v3.0.0.html). Si instalas el entorno por tu cuenta, usa `requirements.txt` (requiere *pandas* ≥ 3.0 y *PyArrow* ≥ 16).
+> ⚠️ **ADVERTENCIA: el curso usa *pandas* 3.** *pandas* 3.0 es una gran actualización de arquitectura: Copy-on-Write es obligatorio y el texto se guarda por defecto con el tipo `str` respaldado por PyArrow. Es **incompatible hacia atrás**: código escrito para *pandas* 2.x (asignación encadenada como `df["col"][fila] = valor`, `inplace=True` sobre una columna, comprobaciones de `dtype == object` para texto) puede cambiar de comportamiento o fallar sin error visible. El notebook `03_pandas_3_esencial.ipynb` lo explica con ejemplos; consulta también las [notas de versión de *pandas* 3.0](https://pandas.pydata.org/docs/whatsnew/v3.0.0.html). Si instalas el entorno por tu cuenta, usa `requirements.txt` (requiere *pandas* ≥ 3.0 y *PyArrow* ≥ 16).
 
-La primera vez tarda unos minutos porque instala las librerías. Después abre `01_numpy_pandas_esenciales.ipynb`, elige el kernel **Python 3.12** (`/usr/local/bin/python`) en **Select Kernel** y ejecuta las celdas en orden con `Shift + Enter`.
+La primera vez tarda unos minutos porque instala las librerías. Después abre `01_bienvenida_y_reglas_del_curso.ipynb`, elige el kernel **Python 3.12** (`/usr/local/bin/python`) en **Select Kernel** y ejecuta las celdas en orden con `Shift + Enter`.
 
 > 💡 Codespaces se detiene solo tras un rato de inactividad y tus cambios se conservan. Para no gastar tus horas gratuitas, detenlo al terminar: **github.com/codespaces** → `…` → **Stop codespace**.
 

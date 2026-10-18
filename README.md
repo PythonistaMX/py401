@@ -37,7 +37,7 @@ Un curso práctico de **8 sesiones en vivo de 2 horas** (16 horas) sobre noteboo
 * **Contrastar hipótesis con responsabilidad:** supuestos, valor *p* y tamaño del efecto.
 * **Comunicar hallazgos:** un EDA reproducible y un informe claro sobre sus límites.
 
-Todo el entorno se ejecuta en la nube mediante **GitHub Codespaces**, sin necesidad de instalación local, y los datos vienen incluidos en `data/` (no se necesita internet para los notebooks).
+Todo el entorno se ejecuta en la nube mediante **GitHub Codespaces**, sin necesidad de instalación local, y los datos de las sesiones vienen incluidos en `data/` (no se necesita internet para los notebooks). Solo el *dataset* del Proyecto integrador se descarga aparte (ver [Datasets del Proyecto integrador](#-datasets-del-proyecto-integrador)).
 
 ---
 
@@ -96,7 +96,7 @@ El curso consta de **8 sesiones de 2 horas**, de lunes a jueves de **6:30 a 8:30
 Materiales de evaluación:
 
 * `evaluaciones/eval1_eda_descriptivo.ipynb` - Consigna, rúbrica y esqueleto del *notebook* de la Evaluación semanal 1 (`tips`).
-* `proyecto/plantilla_proyecto_integrador.ipynb` - Plantilla del Proyecto integrador (Evaluación semanal 2), con la estructura del EDA y del informe; corre completa con `mpg.csv` mientras no se coloque el *dataset* propio en `data/`.
+* `proyecto/plantilla_proyecto_integrador.ipynb` - Plantilla del Proyecto integrador (Evaluación semanal 2), con la estructura del EDA y del informe; descarga el *dataset* elegido a `data/proyecto/` y corre completa con `mpg.csv` mientras no se elija uno.
 
 > **📝 Nota:** Cada notebook incluye ejercicios básicos 🟢 y retos opcionales 🔴. Las celdas `# TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti. Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`).
 
@@ -108,6 +108,27 @@ Materiales de evaluación:
 * `mpg.csv` - demostración de EDA completo (sesión 7).
 
 Los CSV provienen de [`mwaskom/seaborn-data`](https://github.com/mwaskom/seaborn-data), el repositorio que usa `sns.load_dataset()`. En el CSV de `penguins`, `sex` viene como `MALE`/`FEMALE` (en `sns.load_dataset("penguins")` es `Male`/`Female`); el notebook 02 hace esa homologación.
+
+#### 📦 Datasets del Proyecto integrador
+
+Los *datasets* del proyecto **no** vienen en el repositorio: se descargan a `data/proyecto/` (carpeta ignorada por *git*). Fichas completas (fuente, licencia, cita, columnas, problemas de calidad conocidos y comandos alternativos) en [`data/DATASETS.md`](data/DATASETS.md).
+
+| Clave | *Dataset* | Filas × columnas | Tamaño del CSV | Fuente | Licencia |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `diamonds` | Precios de diamantes | 53,940 × 10 | 2.6 MiB | [*ggplot2*](https://ggplot2.tidyverse.org/reference/diamonds.html) vía [`seaborn-data`](https://github.com/mwaskom/seaborn-data) | MIT (*ggplot2*) |
+| `adult` | Adult / Census Income | 48,842 × 15 | 5.1 MiB | [UCI, id 2](https://archive.ics.uci.edu/dataset/2/adult) | CC BY 4.0 |
+| `bike` | Bike Sharing (por hora) | 17,379 × 17 | 1.1 MiB | [UCI, id 275](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset) | CC BY 4.0 |
+| `wine` | Wine Quality (tinto + blanco) | 6,497 × 13 | 0.4 MiB | [UCI, id 186](https://archive.ics.uci.edu/dataset/186/wine+quality) | CC BY 4.0 |
+
+Desde la terminal del *Codespace*, en la raíz del repositorio (solo usa la biblioteca estándar y *pandas*):
+
+```bash
+python tools/descargar_datasets.py --lista              # claves y URL
+python tools/descargar_datasets.py wine                 # uno o varios: diamonds adult bike wine
+python tools/descargar_datasets.py todos --originales   # todos, más los ZIP oficiales del UCI
+```
+
+El notebook `07` y la plantilla del proyecto traen una celda que hace lo mismo con solo escribir la clave en `DATASET_PROYECTO`. **Sin internet:** sube el CSV descargado en otra computadora a `data/proyecto/<clave>.csv` desde el explorador del *Codespace*; si no hay archivo ni conexión, las celdas avisan y usan `mpg.csv` para que puedas seguir trabajando.
 
 ---
 

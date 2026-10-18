@@ -124,3 +124,6 @@ graph_tmp/
 # py401: salidas exportadas localmente (nbconvert) y datos privados
 salidas/
 data/privado/
+
+# py401: datasets del Proyecto integrador descargados con tools/descargar_datasets.py
+data/proyecto/

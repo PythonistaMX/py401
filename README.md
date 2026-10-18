@@ -1,97 +1,172 @@
-# py401 · EDA Práctico
+# Exploratory Data Analysis (EDA) Práctico (Py401)
 
-**Pythonista®** · Instructor: José Luis Chiquete · Nivel: intermedio-avanzado
+[![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Codespaces](https://img.shields.io/badge/GitHub-Codespaces-brightgreen?style=for-the-badge&logo=github&logoColor=white)](https://github.com/features/codespaces)
+[![License](https://img.shields.io/badge/License-CC--BY%204.0-blue.svg?style=for-the-badge)](LICENSE)
+[![pandas](https://img.shields.io/badge/Datos-pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![statsmodels](https://img.shields.io/badge/Inferencia-statsmodels-4B8BBE?style=for-the-badge)](https://www.statsmodels.org/)
 
-Repositorio de trabajo del curso **Exploratory Data Analysis (EDA) Práctico**: 8 sesiones en vivo de 2 h (16 h), de lunes a jueves, de 6:30 a 8:30 pm (hora de la Ciudad de México), del 19 al 29 de octubre de 2026.
+Este repositorio contiene el material oficial del curso **Py401 · Exploratory Data Analysis (EDA) Práctico** de **Pythonista®**, impartido por José Luis Chiquete. El curso enseña a explorar, describir y sacar conclusiones honestas de un conjunto de datos con *Python*, desde la auditoría de calidad hasta la inferencia estadística y el informe de hallazgos.
 
-Herramientas: **NumPy, pandas, Matplotlib, Seaborn, SciPy y statsmodels**, en notebooks de Jupyter que corren en **GitHub Codespaces**. Las evaluaciones y el seguimiento se hacen en **Google Classroom**.
-
----
-
-## 🚀 Cómo abrir el curso en Codespaces
-
-1. Inicia sesión en GitHub y abre este repositorio (o tu copia/*fork*).
-2. Haz clic en el botón verde **Code** → pestaña **Codespaces** → **Create codespace on main**.
-3. Espera a que termine la configuración. **La primera vez tarda unos minutos** porque instala las librerías de `requirements.txt` (lo hace solo, con `postCreateCommand`).
-4. En el explorador de la izquierda abre `notebooks/01_numpy_pandas_esenciales.ipynb`.
-5. Arriba a la derecha, en **Select Kernel**, elige **Python Environments → Python 3.12** (`/usr/local/bin/python`).
-6. Ejecuta las celdas en orden con `Shift + Enter`.
-
-> 💡 Codespaces se detiene solo tras un rato de inactividad y tus cambios se conservan. Para no gastar tus horas gratuitas, detenlo al terminar: **github.com/codespaces** → `…` → **Stop codespace**.
->
-> 💾 Antes de cada sesión, guarda tu trabajo con *commit* y *push* (pestaña **Source Control**) o descarga tu notebook.
-
-### ¿Prefieres trabajar en tu computadora?
-
-```bash
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-jupyter lab
-```
-
-Se recomienda Python 3.11 o 3.12.
+Página del curso: <https://www.pythonista.io/eventos/py401>
 
 ---
 
-## 📁 Estructura
+## 🗺️ Ruta de Aprendizaje
 
-```
-repo-py401/
-├── .devcontainer/
-│   └── devcontainer.json     # Configuración de Codespaces (Python 3.12 + extensiones Jupyter y Python)
-├── data/                     # Datasets en CSV: el curso funciona sin internet
-│   ├── penguins.csv          # Palmer Penguins: dataset principal (sesiones 1–6)
-│   ├── titanic.csv           # Apoyo (sesiones 2 y 6)
-│   ├── tips.csv              # Apoyo (sesión 4 y Evaluación 1)
-│   ├── mpg.csv               # Demostración de EDA completo (sesión 7)
-│   └── penguins_limpio.csv   # Versión limpia de penguins que genera el notebook 02 (se usa desde la sesión 3)
-├── notebooks/                # Notebooks del alumno (sin resultados): uno por sesión
-│   ├── 01_numpy_pandas_esenciales.ipynb
-│   └── 02_calidad_y_faltantes.ipynb
-├── soluciones/               # Versiones resueltas y ejecutadas (para el instructor)
-├── requirements.txt          # Versiones fijas de las librerías
-└── README.md
-```
+### Prerequisitos recomendados
 
-Los notebooks 03 a 08 se agregarán conforme avance el curso.
+Este curso asume conocimiento previo de *Python* y nociones básicas de *NumPy* y *pandas* (la sesión 1 las repasa).
 
-Los CSV provienen de [`mwaskom/seaborn-data`](https://github.com/mwaskom/seaborn-data), el repositorio que usa `sns.load_dataset()`. Diferencia importante: en el CSV de `penguins`, `sex` viene como `MALE`/`FEMALE`, mientras que `sns.load_dataset("penguins")` lo devuelve como `Male`/`Female`. El notebook 02 hace esa homologación.
+| Curso | Título | Repositorio |
+| :--- | :--- | :--- |
+| Py101 | Introducción a la Programación con Python | [PythonistaMX/py101](https://github.com/PythonistaMX/py101) |
+| Py311 | Fundamentos de Python para Ingeniería y Analítica de Datos | [PythonistaMX/py311](https://github.com/PythonistaMX/py311) |
 
 ---
 
-## 🗓️ Calendario de sesiones
+## 🚀 Acerca del Curso
+
+Un curso práctico de **8 sesiones en vivo de 2 horas** (16 horas) sobre notebooks de *Jupyter* que corren en **GitHub Codespaces**, con evaluaciones y seguimiento en **Google Classroom**. Al completarlo serás capaz de:
+
+* **Auditar la calidad de los datos:** tipos de variables, duplicados, inconsistencias, valores faltantes y sesgos de recolección.
+* **Describir distribuciones con criterio:** medidas robustas, forma de la distribución y valores atípicos.
+* **Comparar grupos y medir relaciones:** agregaciones, correlación vs. causalidad y paradoja de Simpson.
+* **Visualizar con eficacia:** elegir la gráfica correcta con *Matplotlib* y *Seaborn*.
+* **Cuantificar la incertidumbre:** error estándar, intervalos de confianza y *bootstrap* con *SciPy* y *statsmodels*.
+* **Contrastar hipótesis con responsabilidad:** supuestos, valor *p* y tamaño del efecto.
+* **Comunicar hallazgos:** un EDA reproducible y un informe claro sobre sus límites.
+
+Todo el entorno se ejecuta en la nube mediante **GitHub Codespaces**, sin necesidad de instalación local, y los datos vienen incluidos en `data/` (no se necesita internet para los notebooks).
+
+---
+
+## 📅 Temario y Estructura
+
+El curso consta de **8 sesiones de 2 horas**, de lunes a jueves de **6:30 a 8:30 pm (hora de la Ciudad de México)**, del 19 al 29 de octubre de 2026, divididas en 4 módulos:
 
 | # | Fecha | Módulo | Temas | Notebook |
-|---|---|---|---|---|
-| 1 | Lun 19 oct | I. Datos y su calidad | NumPy y pandas esenciales; tipos de variables; sesgos de recolección | `01_numpy_pandas_esenciales.ipynb` |
-| 2 | Mar 20 oct | I. Datos y su calidad | Calidad de datos: duplicados, inconsistencias, valores faltantes | `02_calidad_y_faltantes.ipynb` |
-| 3 | Mié 21 oct | II. Describir y comparar | Estadística descriptiva; forma de la distribución; outliers | `03_descriptiva_distribuciones.ipynb` |
-| 4 | Jue 22 oct | II. Describir y comparar | Agregación; relaciones entre variables; correlación vs. causalidad; visualización efectiva | `04_agregacion_relaciones_visualizacion.ipynb` |
-| 5 | Lun 26 oct | III. Inferencia estadística | Incertidumbre: muestreo, error estándar, intervalos de confianza, bootstrap | `05_incertidumbre_bootstrap.ipynb` |
-| 6 | Mar 27 oct | III. Inferencia estadística | Pruebas t, proporciones, chi cuadrada, ANOVA; supuestos; tamaño del efecto | `06_pruebas_hipotesis_efecto.ipynb` |
-| 7 | Mié 28 oct | IV. Proyecto integrador | EDA completo paso a paso | `07_eda_completo.ipynb` |
-| 8 | Jue 29 oct | IV. Proyecto integrador | Redacción y presentación del informe de hallazgos | `08_informe_hallazgos.ipynb` |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Lun 19 oct | I. Datos y su calidad | *NumPy* y *pandas* esenciales; tipos de variables; sesgos de recolección | [01](01_numpy_pandas_esenciales.ipynb) |
+| 2 | Mar 20 oct | I. Datos y su calidad | Duplicados, inconsistencias y valores faltantes | [02](02_calidad_y_faltantes.ipynb) |
+| 3 | Mié 21 oct | II. Describir y comparar | Estadística descriptiva; forma de la distribución; valores atípicos | [03](03_descriptiva_distribuciones.ipynb) |
+| 4 | Jue 22 oct | II. Describir y comparar | Agregación; relaciones; correlación vs. causalidad; visualización efectiva | [04](04_agregacion_relaciones_visualizacion.ipynb) |
+| 5 | Lun 26 oct | III. Inferencia estadística | Muestreo, error estándar, intervalos de confianza, *bootstrap* | [05](05_incertidumbre_bootstrap.ipynb) |
+| 6 | Mar 27 oct | III. Inferencia estadística | Pruebas *t*, proporciones, chi cuadrada, ANOVA; supuestos; tamaño del efecto | [06](06_pruebas_hipotesis_efecto.ipynb) |
+| 7 | Mié 28 oct | IV. Proyecto integrador | EDA completo paso a paso | [07](07_eda_completo.ipynb) |
+| 8 | Jue 29 oct | IV. Proyecto integrador | Redacción y presentación del informe de hallazgos | [08](08_informe_hallazgos.ipynb) |
 
-Todas las sesiones son de **6:30 a 8:30 pm (CDMX)**.
-
-### Evaluaciones
+### Evaluaciones (en Google Classroom)
 
 | Evaluación | Se publica | Cierra | Composición |
-|---|---|---|---|
+| :--- | :--- | :--- | :--- |
 | Evaluación semanal 1 (Módulos I y II) | Jue 22 oct, 8:30 pm | Dom 25 oct, 11:59 pm | Cuestionario (40) + notebook (60) |
 | Evaluación semanal 2 (Módulos III y IV) | Jue 29 oct, 8:30 pm | Dom 1 nov, 11:59 pm | Cuestionario (30) + Proyecto integrador (70) |
 
-La consigna del Proyecto integrador se publica el lunes 26 de octubre.
+**Diploma:** calificación final = (E1 + E2) / 2 **≥ 70** y asistencia a **al menos 7 de las 8 sesiones**. Horarios en hora de la Ciudad de México.
 
-**Diploma:** calificación final = (E1 + E2) / 2 **≥ 70** y asistencia a **al menos 7 de las 8 sesiones**. Entregas tardías: hasta 48 h con 10% de penalización.
+### 📚 Contenidos
+
+#### 🧭 Tabla de contenidos (enlaces rápidos)
+- [01_numpy_pandas_esenciales.ipynb](01_numpy_pandas_esenciales.ipynb)
+- [02_calidad_y_faltantes.ipynb](02_calidad_y_faltantes.ipynb)
+- [03_descriptiva_distribuciones.ipynb](03_descriptiva_distribuciones.ipynb)
+- [04_agregacion_relaciones_visualizacion.ipynb](04_agregacion_relaciones_visualizacion.ipynb)
+- [05_incertidumbre_bootstrap.ipynb](05_incertidumbre_bootstrap.ipynb)
+- [06_pruebas_hipotesis_efecto.ipynb](06_pruebas_hipotesis_efecto.ipynb)
+- [07_eda_completo.ipynb](07_eda_completo.ipynb)
+- [08_informe_hallazgos.ipynb](08_informe_hallazgos.ipynb)
+
+#### 🔹 Módulo I: Datos y su calidad
+* `01` - *NumPy* esencial (arreglos, `dtype`, vectorización, *broadcasting*, máscaras), *pandas* esencial (`info`, `describe`, `loc`/`iloc`, filtros, `assign`), tipos de variables (`category`, tipos *nullable*, fechas) y sesgos de recolección.
+* `02` - Lista de verificación de calidad, duplicados exactos y por llave, inconsistencias, mecanismos de faltantes (MCAR, MAR, MNAR) e imputación; genera `data/penguins_limpio.csv`.
+
+#### 🔹 Módulo II: Describir y comparar
+* `03` - Tendencia central y dispersión, forma de la distribución (histograma, KDE, ECDF, *boxplot*) y valores atípicos (IQR, *z* robusto).
+* `04` - `groupby`/`agg`, `pivot_table`, `crosstab`, `melt`; Pearson y Spearman; paradoja de Simpson; visualización efectiva.
+
+#### 🔹 Módulo III: Inferencia estadística
+* `05` - Distribución muestral, error estándar, intervalos de confianza y *bootstrap* (`scipy.stats`, *statsmodels*).
+* `06` - *t* de Welch, Mann-Whitney, permutación, proporciones, chi cuadrada, ANOVA y Tukey; tamaño del efecto.
+
+#### 🔹 Módulo IV: Proyecto integrador
+* `07` - EDA completo y reproducible sobre `mpg`; arranque del proyecto.
+* `08` - Informe de hallazgos y exportación con `nbconvert`.
+
+> **📝 Nota:** Cada notebook incluye ejercicios básicos 🟢 y retos opcionales 🔴. Las celdas `# TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti. Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`).
+
+#### 📁 Datos (`data/`)
+* `penguins.csv` - Palmer Penguins, dataset principal (sesiones 1–6).
+* `penguins_limpio.csv` - versión limpia que genera el notebook 02 (desde la sesión 3).
+* `titanic.csv` - apoyo (sesiones 2 y 6).
+* `tips.csv` - apoyo (sesión 4 y Evaluación 1).
+* `mpg.csv` - demostración de EDA completo (sesión 7).
+
+Los CSV provienen de [`mwaskom/seaborn-data`](https://github.com/mwaskom/seaborn-data), el repositorio que usa `sns.load_dataset()`. En el CSV de `penguins`, `sex` viene como `MALE`/`FEMALE` (en `sns.load_dataset("penguins")` es `Male`/`Female`); el notebook 02 hace esa homologación.
 
 ---
 
-## 🧭 Cómo están organizados los notebooks
+## 🛠️ Instalación y Uso
 
-- Cada notebook empieza con **objetivos** y la **agenda** de la sesión.
-- Explicaciones en Markdown y código comentado que se ejecuta en orden.
-- 🟢 **Ejercicios básicos**: lo que todos deben dominar.
-- 🔴 **Retos opcionales**: para profundizar; ideales si ya tienes experiencia.
-- Las celdas `# TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti.
+¡Olvídate de configurar entornos locales! Este repositorio está configurado para **GitHub Codespaces**.
+
+1. Haz clic en el botón **"Code"** (verde) arriba a la derecha.
+2. Ve a la pestaña **"Codespaces"**.
+3. Haz clic en **"Create codespace on main"**.
+
+El entorno se iniciará automáticamente con:
+* *Python* 3.12
+* Extensiones de *Python* y *Jupyter* para VS Code
+* Todas las librerías del curso instaladas con versiones fijas (`requirements.txt`): *NumPy*, *pandas*, *Matplotlib*, *Seaborn*, *SciPy* y *statsmodels*.
+
+La primera vez tarda unos minutos porque instala las librerías. Después abre `01_numpy_pandas_esenciales.ipynb`, elige el kernel **Python 3.12** (`/usr/local/bin/python`) en **Select Kernel** y ejecuta las celdas en orden con `Shift + Enter`.
+
+> 💡 Codespaces se detiene solo tras un rato de inactividad y tus cambios se conservan. Para no gastar tus horas gratuitas, detenlo al terminar: **github.com/codespaces** → `…` → **Stop codespace**.
+
+### Ejecución Local (Opcional)
+Si prefieres trabajar en tu máquina:
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/PythonistaMX/py401.git
+cd py401
+
+# Crear entorno virtual
+python -m venv venv
+source venv/bin/activate  # En Windows: venv\Scripts\activate
+
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Iniciar Jupyter
+jupyter lab
+```
+
+---
+
+## 📖 Recursos Adicionales
+
+* [Documentación oficial de pandas](https://pandas.pydata.org/docs/)
+* [Documentación oficial de Seaborn](https://seaborn.pydata.org/)
+* [Documentación oficial de SciPy (`scipy.stats`)](https://docs.scipy.org/doc/scipy/reference/stats.html)
+* [Documentación oficial de statsmodels](https://www.statsmodels.org/stable/)
+
+---
+
+## 📝 Licencia
+
+Este proyecto está bajo la licencia **Creative Commons Atribución 4.0 Internacional (CC-BY 4.0)**.
+
+**Eres libre de:**
+- ✅ Compartir el material en cualquier medio o formato
+- ✅ Adaptar, remezclar y crear contenido derivado
+- ✅ Usar con fines comerciales
+
+**Con la condición de:**
+- 📌 **Atribución:** Debes dar crédito apropiado, proporcionar un enlace a la licencia e indicar si se han realizado cambios.
+
+Para más información, visita: https://creativecommons.org/licenses/by/4.0/
+
+Véase el archivo [LICENSE](LICENSE) para los términos completos.
+
+&copy; José Luis Chiquete Valdivieso. 2017-2026.

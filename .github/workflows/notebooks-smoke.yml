@@ -1,0 +1,72 @@
+name: Notebooks Smoke Test
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  smoke-notebooks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install nbclient
+
+      - name: Execute session notebooks (01-08) and solutions
+        run: |
+          python - <<'PY'
+          import glob
+          import os
+          import sys
+
+          import nbformat
+          from nbclient import NotebookClient
+
+          # Notebooks de alumno (raíz) y de soluciones; los que aún no existen se omiten.
+          NOTEBOOKS = []
+          for n in range(1, 9):
+              NOTEBOOKS += sorted(glob.glob(f"{n:02d}_*.ipynb"))
+              NOTEBOOKS += sorted(glob.glob(os.path.join("soluciones", f"{n:02d}_*_soluciones.ipynb")))
+
+          if not NOTEBOOKS:
+              print("[SMOKE] No hay notebooks que ejecutar.")
+              sys.exit(0)
+
+          fallas = []
+          for path in NOTEBOOKS:
+              print(f"\n[SMOKE] Ejecutando: {path}")
+              nb = nbformat.read(path, as_version=4)
+              client = NotebookClient(
+                  nb,
+                  timeout=300,
+                  kernel_name="python3",
+                  allow_errors=False,
+                  resources={"metadata": {"path": os.path.dirname(path) or "."}},
+              )
+              try:
+                  client.execute()
+                  n_code = sum(c.cell_type == "code" for c in nb.cells)
+                  print(f"[OK] {path} (celdas de código: {n_code})")
+              except Exception as exc:  # noqa: BLE001
+                  print(f"[ERROR] {path}: {type(exc).__name__}: {str(exc)[:500]}")
+                  fallas.append(path)
+
+          if fallas:
+              print("\n[SMOKE] Fallaron:", *fallas, sep="\n  - ")
+              sys.exit(1)
+          print("\n[SMOKE] Todos los notebooks se ejecutaron sin errores.")
+          PY

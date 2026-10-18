@@ -78,7 +78,7 @@ El curso consta de **8 sesiones de 2 horas**, de lunes a jueves de **6:30 a 8:30
 - [08_informe_hallazgos.ipynb](08_informe_hallazgos.ipynb)
 
 #### 🔹 Módulo I: Datos y su calidad
-* `01` - *NumPy* esencial (arreglos, `dtype`, vectorización, *broadcasting*, máscaras), *pandas* esencial (`info`, `describe`, `loc`/`iloc`, filtros, `assign`), tipos de variables (`category`, tipos *nullable*, fechas) y sesgos de recolección.
+* `01` - *NumPy* esencial (arreglos, `dtype`, vectorización, *broadcasting*, máscaras), *pandas* esencial (`info`, `describe`, `loc`/`iloc`, filtros, `assign`), tipos de variables (taxonomía, escalas de Stevens, `category`, tipos *nullable*, fechas), muestreo y sesgos de recolección.
 * `02` - Lista de verificación de calidad, duplicados exactos y por llave, inconsistencias, mecanismos de faltantes (MCAR, MAR, MNAR) e imputación; genera `data/penguins_limpio.csv`.
 
 #### 🔹 Módulo II: Describir y comparar
@@ -86,12 +86,17 @@ El curso consta de **8 sesiones de 2 horas**, de lunes a jueves de **6:30 a 8:30
 * `04` - `groupby`/`agg`, `pivot_table`, `crosstab`, `melt`; Pearson y Spearman; paradoja de Simpson; visualización efectiva.
 
 #### 🔹 Módulo III: Inferencia estadística
-* `05` - Distribución muestral, error estándar, intervalos de confianza y *bootstrap* (`scipy.stats`, *statsmodels*).
+* `05` - Distribución muestral (ley de los grandes números, teorema central del límite, tamaño de muestra y diseño estratificado), error estándar, intervalos de confianza y *bootstrap* (`scipy.stats`, *statsmodels*).
 * `06` - *t* de Welch, Mann-Whitney, permutación, proporciones, chi cuadrada, ANOVA y Tukey; tamaño del efecto.
 
 #### 🔹 Módulo IV: Proyecto integrador
 * `07` - EDA completo y reproducible sobre `mpg`; arranque del proyecto.
 * `08` - Informe de hallazgos y exportación con `nbconvert`.
+
+Materiales de evaluación:
+
+* `evaluaciones/eval1_eda_descriptivo.ipynb` - Consigna, rúbrica y esqueleto del *notebook* de la Evaluación semanal 1 (`tips`).
+* `proyecto/plantilla_proyecto_integrador.ipynb` - Plantilla del Proyecto integrador (Evaluación semanal 2), con la estructura del EDA y del informe; corre completa con `mpg.csv` mientras no se coloque el *dataset* propio en `data/`.
 
 > **📝 Nota:** Cada notebook incluye ejercicios básicos 🟢 y retos opcionales 🔴. Las celdas `# TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti. Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`).
 

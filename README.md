@@ -117,7 +117,9 @@ Los CSV provienen de [`mwaskom/seaborn-data`](https://github.com/mwaskom/seaborn
 El entorno se iniciará automáticamente con:
 * *Python* 3.12
 * Extensiones de *Python* y *Jupyter* para VS Code
-* Todas las librerías del curso instaladas con versiones fijas (`requirements.txt`): *NumPy*, *pandas*, *Matplotlib*, *Seaborn*, *SciPy* y *statsmodels*.
+* Todas las librerías del curso instaladas según las versiones mínimas de `requirements.txt`: *NumPy*, *pandas*, *Matplotlib*, *Seaborn*, *SciPy* y *statsmodels*.
+
+> ⚠️ **ADVERTENCIA: el curso usa *pandas* 3.** *pandas* 3.0 (enero de 2026) es una gran actualización de arquitectura: Copy-on-Write es obligatorio y el texto se guarda por defecto con el tipo `str` respaldado por PyArrow. Es **incompatible hacia atrás**: código escrito para *pandas* 2.x (asignación encadenada como `df["col"][fila] = valor`, `inplace=True` sobre una columna, comprobaciones de `dtype == object` para texto) puede cambiar de comportamiento o fallar sin error visible. El notebook `01` lo explica con ejemplos; consulta también las [notas de versión de *pandas* 3.0](https://pandas.pydata.org/docs/whatsnew/v3.0.0.html). Si instalas el entorno por tu cuenta, usa `requirements.txt` (requiere *pandas* ≥ 3.0 y *PyArrow* ≥ 16).
 
 La primera vez tarda unos minutos porque instala las librerías. Después abre `01_numpy_pandas_esenciales.ipynb`, elige el kernel **Python 3.12** (`/usr/local/bin/python`) en **Select Kernel** y ejecuta las celdas en orden con `Shift + Enter`.
 

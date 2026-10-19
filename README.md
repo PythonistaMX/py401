@@ -1,7 +1,7 @@
 # Exploratory Data Analysis (EDA) Práctico (Py401)
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Codespaces](https://img.shields.io/badge/GitHub-Codespaces-brightgreen?style=for-the-badge&logo=github&logoColor=white)](https://github.com/features/codespaces)
+[![Codespaces](https://img.shields.io/badge/GitHub-Codespaces-brightgreen?style=for-the-badge&logo=github&logoColor=white)](https://codespaces.new/PythonistaMX/py401)
 [![License](https://img.shields.io/badge/License-CC--BY%204.0-blue.svg?style=for-the-badge)](LICENSE)
 [![pandas](https://img.shields.io/badge/Datos-pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![statsmodels](https://img.shields.io/badge/Inferencia-statsmodels-4B8BBE?style=for-the-badge)](https://www.statsmodels.org/)

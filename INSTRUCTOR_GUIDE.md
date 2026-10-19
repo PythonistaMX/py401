@@ -234,12 +234,11 @@ Al terminar, el participante podrá:
 - **Evaluación semanal 1 (E1, Módulos I y II):** 100 pts = cuestionario 40 (Google Forms, 10 preguntas de 4 pts, un intento) + notebook 60 (`evaluaciones/eval1_eda_descriptivo.ipynb` con `tips`). Se publica al terminar la Sesión 4 y cierra al final de la semana 1.
 - **Evaluación semanal 2 (E2, Módulos III y IV):** 100 pts = cuestionario 30 (10 preguntas de 3 pts, un intento) + Proyecto integrador 70. Se publica al terminar la Sesión 8 y cierra al final de la semana 2. La consigna del proyecto se publica en la Sesión 5 (`18_bootstrap_e_interpretacion_de_intervalos.ipynb`).
 - **Calificación final = (E1 + E2) / 2.** En Classroom: categorías "Evaluación semanal 1" (50%) y "Evaluación semanal 2" (50%).
-- **Diploma:** calificación final ≥ 70 **y** asistencia a al menos 7 de 8 sesiones (80%; máximo una falta).
+- **Diploma:** calificación final ≥ 70 (no se exige mínimo por evaluación) **y** asistencia a al menos 7 de 8 sesiones (80%; máximo una falta).
 - Las fechas y horas exactas de publicación y cierre de cada evaluación se anuncian en Classroom.
 
-### Reglas abiertas
+### Reglas sugeridas
 
-- **Por definir:** si además se exige un mínimo de 70 en cada evaluación por separado. Fijarlo antes de la Sesión 1 y publicarlo en el tema de bienvenida.
 - **Sugerido:** entregas tardías hasta 48 h con 10% de penalización; después no se califican.
 - **Sugerido:** cuenta como asistencia estar conectado al menos 90 de los 120 minutos; ver la grabación no cuenta.
 - **Sugerido:** un dataset propio para el proyecto debe aprobarse a más tardar en la Sesión 6.

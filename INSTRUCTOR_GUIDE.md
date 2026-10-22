@@ -1,6 +1,6 @@
 # Instructor Guide - Py401
 
-Guía operativa para impartir **Py401 · EDA Práctico** con consistencia técnica y pedagógica. Fuente: mapa de sesiones del curso. Las fechas y los horarios de cada edición se publican en Google Classroom y en la página del curso; este repositorio no los fija para que el material sirva en cualquier edición.
+Guía operativa para impartir **Py401 · EDA Práctico** con consistencia técnica y pedagógica. Fuente: mapa de sesiones del curso. El material no fija fechas ni horarios para que sirva en cualquier edición.
 
 ## Estructura (8 sesiones de 2 horas, 26 *notebooks*)
 

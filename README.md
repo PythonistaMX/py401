@@ -27,7 +27,7 @@ Este curso asume conocimiento previo de *Python* y nociones básicas de *NumPy* 
 
 ## 🚀 Acerca del Curso
 
-Un curso práctico de **8 sesiones en vivo de 2 horas** (16 horas) sobre notebooks de *Jupyter* que corren en **GitHub Codespaces**, con evaluaciones y seguimiento en **Google Classroom**. Al completarlo serás capaz de:
+Un curso práctico de **8 sesiones en vivo de 2 horas** (16 horas) sobre notebooks de *Jupyter* que corren en **GitHub Codespaces**, con práctica y dudas en **Google Classroom**. Al completarlo serás capaz de:
 
 * **Auditar la calidad de los datos:** tipos de variables, duplicados, inconsistencias, valores faltantes y sesgos de recolección.
 * **Describir distribuciones con criterio:** medidas robustas, forma de la distribución y valores atípicos.
@@ -52,14 +52,13 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 | III. Inferencia estadística | Muestreo, error estándar, intervalos de confianza, *bootstrap*; pruebas *t*, proporciones, chi cuadrada, ANOVA; supuestos; tamaño del efecto | `16`-`22` |
 | IV. Proyecto integrador | EDA completo paso a paso; redacción y presentación del informe de hallazgos | `23`-`26` |
 
-### Evaluaciones (en Google Classroom)
+### Práctica, Proyecto integrador y diploma
 
-| Evaluación | Se publica | Cierra | Composición |
-| :--- | :--- | :--- | :--- |
-| Evaluación semanal 1 (Módulos I y II) | Al terminar la sesión 4 | Al final de la semana 1 | Cuestionario (40) + notebook (60) |
-| Evaluación semanal 2 (Módulos III y IV) | Al terminar la sesión 8 | Al final de la semana 2 | Cuestionario (30) + Proyecto integrador (70) |
+* Los *notebooks* son **práctica**: los ejercicios 🟢 y los retos 🔴 se trabajan en clase y en Google Classroom, que también es el canal de dudas.
+* `15_visualizacion_efectiva.ipynb` cierra el Módulo II con una **práctica integradora** con `tips`, y `26_del_notebook_al_informe.ipynb` cierra el curso con **preguntas de repaso** de los Módulos III y IV.
+* El **Proyecto integrador** es un EDA completo y reproducible con su informe de hallazgos; la consigna está en `18_bootstrap_e_interpretacion_de_intervalos.ipynb` y la plantilla en `proyecto/plantilla_proyecto_integrador.ipynb`.
 
-**Diploma:** calificación final = (E1 + E2) / 2 **≥ 70** y asistencia a **al menos 7 de las 8 sesiones**. Las fechas y horas exactas de cada evaluación se anuncian en Classroom.
+**Diploma:** requiere asistencia a **al menos 7 de las 8 sesiones** (80%; se permite como máximo una falta).
 
 ### 📚 Contenidos
 
@@ -92,7 +91,7 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 - [26_del_notebook_al_informe.ipynb](26_del_notebook_al_informe.ipynb)
 
 #### 🔹 Módulo I: Datos y su calidad
-* `01` - Bienvenida, reglas de evaluación, asistencia y diploma; arranque del *Codespace*.
+* `01` - Bienvenida, reglas del curso (asistencia y diploma); arranque del *Codespace*.
 * `02` - *NumPy* esencial: arreglos, `dtype`, vectorización, *broadcasting*, máscaras y decisiones que cambian resultados (`ddof`, `NaN`, desbordamiento, flotantes).
 * `03` - *pandas* 3 esencial: *Copy-on-Write*, tipo `str`, `read_csv`, `info`, `describe`, `loc`/`iloc`, filtros, `assign` y faltantes silenciosos.
 * `04` - Tipos de variables: taxonomía, escalas de Stevens, `dtype` de *pandas* 3, `category`, tipos *nullable* y fechas.
@@ -108,7 +107,7 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 * `12` - Valores atípicos (IQR, *z*, *z* robusto), ¿error o valor real?, transformación logarítmica y ejercicio integrador.
 * `13` - Agregación: `groupby`/`agg`, `pivot_table`, `crosstab` y `melt`.
 * `14` - Relaciones entre variables: Pearson y Spearman, correlación vs. causalidad, confusores y paradoja de Simpson.
-* `15` - Visualización efectiva con *Matplotlib* y *Seaborn*, ejercicio de la sesión y Evaluación semanal 1.
+* `15` - Visualización efectiva con *Matplotlib* y *Seaborn*, ejercicio de la sesión y práctica integradora con `tips`.
 
 #### 🔹 Módulo III: Inferencia estadística
 * `16` - Distribución muestral: ley de los grandes números, teorema central del límite, tamaño de muestra y diseño estratificado.
@@ -123,12 +122,11 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 * `23` - EDA completo y reproducible sobre `mpg`, paso a paso.
 * `24` - Buenas prácticas de reproducibilidad y arranque del Proyecto integrador (descarga del *dataset*, preguntas y auditoría).
 * `25` - Estructura del informe de hallazgos; comunicar IC y tamaños del efecto en lenguaje llano; gráfica final; qué no afirmar.
-* `26` - Del *notebook* al informe con `nbconvert`, revisión entre pares, presentaciones, Evaluación semanal 2 y cierre del curso.
+* `26` - Del *notebook* al informe con `nbconvert`, revisión entre pares, presentaciones relámpago, preguntas de repaso y cierre del curso.
 
-Materiales de evaluación:
+Material del Proyecto integrador:
 
-* `evaluaciones/eval1_eda_descriptivo.ipynb` - Consigna, rúbrica y esqueleto del *notebook* de la Evaluación semanal 1 (`tips`).
-* `proyecto/plantilla_proyecto_integrador.ipynb` - Plantilla del Proyecto integrador (Evaluación semanal 2), con la estructura del EDA y del informe; descarga el *dataset* elegido a `data/proyecto/` y corre completa con `mpg.csv` mientras no se elija uno.
+* `proyecto/plantilla_proyecto_integrador.ipynb` - Plantilla del Proyecto integrador, con la estructura del EDA y del informe; descarga el *dataset* elegido a `data/proyecto/` y corre completa con `mpg.csv` mientras no se elija uno.
 
 > **📝 Nota:** Los notebooks con práctica incluyen ejercicios básicos 🟢 y retos opcionales 🔴. Las celdas `# TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti. Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`); `01`, `23` y `25` no tienen ejercicios. Cada notebook es independiente y se puede abrir y ejecutar por separado.
 
@@ -136,7 +134,7 @@ Materiales de evaluación:
 * `penguins.csv` - Palmer Penguins, dataset principal (notebooks `03` a `22`).
 * `penguins_limpio.csv` - versión limpia que genera `09_auditoria_de_calidad.ipynb` (se usa desde `10`; si falta, cada notebook la regenera).
 * `titanic.csv` - apoyo (calidad, proporciones e inferencia).
-* `tips.csv` - apoyo (agregación, relaciones, pruebas y Evaluación 1).
+* `tips.csv` - apoyo (agregación, relaciones, pruebas y práctica integradora del `15`).
 * `mpg.csv` - demostración de EDA completo (`23` y `24`) y respaldo del Proyecto integrador.
 
 Los CSV provienen de [`mwaskom/seaborn-data`](https://github.com/mwaskom/seaborn-data), el repositorio que usa `sns.load_dataset()`. En el CSV de `penguins`, `sex` viene como `MALE`/`FEMALE` (en `sns.load_dataset("penguins")` es `Male`/`Female`); `09_auditoria_de_calidad.ipynb` hace esa homologación.

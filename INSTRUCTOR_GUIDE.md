@@ -9,11 +9,11 @@ Los *notebooks* se numeran por tema, en orden, a lo largo de todo el curso; cada
 1. Sesión 1: *NumPy* y *pandas* esenciales, tipos de variables y sesgos de recolección (01-06).
 2. Sesión 2: calidad de datos y valores faltantes (07-09). Genera `data/penguins_limpio.csv` (`09`).
 3. Sesión 3: estadística descriptiva, forma de la distribución y valores atípicos (10-12).
-4. Sesión 4: agregación, relaciones entre variables y visualización efectiva (13-15). Se publica la Evaluación semanal 1.
+4. Sesión 4: agregación, relaciones entre variables y visualización efectiva (13-15). Cierra con la práctica integradora con `tips`.
 5. Sesión 5: incertidumbre, intervalos de confianza y *bootstrap* (16-18). Se publica la consigna del Proyecto integrador.
 6. Sesión 6: pruebas de hipótesis y tamaño del efecto (19-22).
 7. Sesión 7: EDA completo paso a paso con `mpg` y arranque del proyecto (23-24).
-8. Sesión 8: informe de hallazgos y presentación (25-26). Se publica la Evaluación semanal 2.
+8. Sesión 8: informe de hallazgos y presentación (25-26). Cierra con preguntas de repaso de los Módulos III y IV.
 
 Cada *notebook* es independiente: tiene su propia celda de preparación (bibliotecas, `DATA` con `os.path.join` y semilla `401`) y, cuando necesita algo de un *notebook* anterior, lo vuelve a crear en la celda "Objetos de los *notebooks* anteriores". Los temas con ejercicios tienen su versión resuelta en `soluciones/NN_tema_soluciones.ipynb`; `01`, `23` y `25` no tienen ejercicios ni soluciones.
 
@@ -39,7 +39,7 @@ Al terminar, el participante podrá:
 
 | Min | Bloque | Notebook |
 |---|---|---|
-| 10 | Bienvenida, reglas de evaluación y asistencia, arranque del *Codespace* | `01_bienvenida_y_reglas_del_curso` |
+| 10 | Bienvenida, reglas del curso (asistencia y diploma), arranque del *Codespace* | `01_bienvenida_y_reglas_del_curso` |
 | 15 | *NumPy*: repaso exprés y decisiones que cambian resultados | `02_numpy_esencial` |
 | 25 | *pandas*: repaso exprés, *pandas* 3 y decisiones al explorar | `03_pandas_3_esencial` |
 | 25 | Tipos de variables: taxonomía, escalas de medición y `dtype` | `04_tipos_de_variables` |
@@ -101,7 +101,7 @@ Al terminar, el participante podrá:
 
 **Notebooks:** [`13_agregacion`](13_agregacion.ipynb), [`14_relaciones_entre_variables`](14_relaciones_entre_variables.ipynb), [`15_visualizacion_efectiva`](15_visualizacion_efectiva.ipynb).
 
-**Descripción:** En esta sesión se resumirán datos por grupos (`groupby`, `pivot_table`, `crosstab`, `melt`), se medirán relaciones entre variables con las correlaciones de Pearson y Spearman sin confundir correlación con causalidad (confusores y paradoja de Simpson) y se construirán gráficas claras con *Matplotlib* y *Seaborn*. Al final se presenta la **Evaluación semanal 1**.
+**Descripción:** En esta sesión se resumirán datos por grupos (`groupby`, `pivot_table`, `crosstab`, `melt`), se medirán relaciones entre variables con las correlaciones de Pearson y Spearman sin confundir correlación con causalidad (confusores y paradoja de Simpson) y se construirán gráficas claras con *Matplotlib* y *Seaborn*. Al final se propone una **práctica integradora** con `tips`.
 
 **Objetivo:** **Resumir por grupos, medir relaciones entre variables y comunicarlas con gráficas claras, sin confundir correlación con causalidad.**
 
@@ -120,7 +120,7 @@ Al terminar, el participante podrá:
 | 25 | Relaciones entre variables | `14_relaciones_entre_variables` |
 | 30 | Visualización efectiva | `15_visualizacion_efectiva` |
 | 20 | Ejercicio de la sesión | `15_visualizacion_efectiva` |
-| 10 | Presentación de la Evaluación semanal 1 | `15_visualizacion_efectiva` |
+| 10 | Práctica integradora de los Módulos I y II (consigna con `tips`) | `15_visualizacion_efectiva` |
 
 ### Sesión 5 · Módulo III: Inferencia estadística
 
@@ -140,7 +140,7 @@ Al terminar, el participante podrá:
 
 | Min | Bloque | Notebook |
 |---|---|---|
-| 10 | Retroalimentación de la Evaluación semanal 1 | `16_distribucion_muestral` |
+| 10 | Repaso: errores frecuentes en un EDA descriptivo | `16_distribucion_muestral` |
 | 30 | Distribución muestral: ley de los grandes números, teorema central del límite, tamaño de muestra y diseño | `16_distribucion_muestral` |
 | 25 | Error estándar e intervalos de confianza | `17_error_estandar_e_intervalos_de_confianza` |
 | 25 | *Bootstrap* | `18_bootstrap_e_interpretacion_de_intervalos` |
@@ -200,7 +200,7 @@ Al terminar, el participante podrá:
 
 **Notebooks:** [`25_estructura_del_informe_y_comunicacion`](25_estructura_del_informe_y_comunicacion.ipynb), [`26_del_notebook_al_informe`](26_del_notebook_al_informe.ipynb).
 
-**Descripción:** En esta sesión se convertirá el análisis en un informe claro, honesto sobre sus límites y orientado a la decisión: estructura del informe, cómo comunicar intervalos de confianza y tamaños del efecto en lenguaje llano, la gráfica final, la exportación con `nbconvert` y la revisión entre pares. Al final se presenta la **Evaluación semanal 2** y se cierra el curso.
+**Descripción:** En esta sesión se convertirá el análisis en un informe claro, honesto sobre sus límites y orientado a la decisión: estructura del informe, cómo comunicar intervalos de confianza y tamaños del efecto en lenguaje llano, la gráfica final, la exportación con `nbconvert` y la revisión entre pares. Al final se hacen las presentaciones relámpago y las **preguntas de repaso**, y se cierra el curso.
 
 **Objetivo:** **Convertir un análisis exploratorio en un informe de hallazgos claro, verificable y sin afirmaciones que los datos no respaldan.**
 
@@ -220,7 +220,7 @@ Al terminar, el participante podrá:
 | 20 | Comunicar números: IC y tamaño del efecto en lenguaje llano, gráfica final, qué no afirmar | `25_estructura_del_informe_y_comunicacion` |
 | 15 | Del *notebook* al informe: exportación con `nbconvert` | `26_del_notebook_al_informe` |
 | 30 | Taller de redacción del proyecto y revisión entre pares | `26_del_notebook_al_informe` |
-| 20 | Presentaciones relámpago, Evaluación semanal 2 y cierre del curso | `26_del_notebook_al_informe` |
+| 20 | Presentaciones relámpago, repaso y cierre del curso | `26_del_notebook_al_informe` |
 
 ## Resultados de aprendizaje por módulo
 
@@ -229,39 +229,36 @@ Al terminar, el participante podrá:
 - III. Inferencia estadística: cuantificar la incertidumbre (IC, *bootstrap*) y aplicar pruebas con supuestos revisados y tamaño del efecto.
 - IV. Proyecto integrador: ejecutar un EDA reproducible y redactar un informe de hallazgos honesto sobre sus límites.
 
-## Evaluación
+## Práctica, proyecto y diploma
 
-- **Evaluación semanal 1 (E1, Módulos I y II):** 100 pts = cuestionario 40 (Google Forms, 10 preguntas de 4 pts, un intento) + notebook 60 (`evaluaciones/eval1_eda_descriptivo.ipynb` con `tips`). Se publica al terminar la Sesión 4 y cierra al final de la semana 1.
-- **Evaluación semanal 2 (E2, Módulos III y IV):** 100 pts = cuestionario 30 (10 preguntas de 3 pts, un intento) + Proyecto integrador 70. Se publica al terminar la Sesión 8 y cierra al final de la semana 2. La consigna del proyecto se publica en la Sesión 5 (`18_bootstrap_e_interpretacion_de_intervalos.ipynb`).
-- **Calificación final = (E1 + E2) / 2.** En Classroom: categorías "Evaluación semanal 1" (50%) y "Evaluación semanal 2" (50%).
-- **Diploma:** calificación final ≥ 70 (no se exige mínimo por evaluación) **y** asistencia a al menos 7 de 8 sesiones (80%; máximo una falta).
-- Las fechas y horas exactas de publicación y cierre de cada evaluación se anuncian en Classroom.
+- **Práctica:** los ejercicios de cada *notebook* se trabajan en clase y en Classroom, que también es el canal de dudas. La Sesión 4 cierra con la práctica integradora con `tips` (`15_visualizacion_efectiva`) y la Sesión 8 con preguntas de repaso de los Módulos III y IV (`26_del_notebook_al_informe`).
+- **Proyecto integrador:** la consigna se presenta en la Sesión 5 (`18_bootstrap_e_interpretacion_de_intervalos.ipynb`) y la plantilla está en `proyecto/plantilla_proyecto_integrador.ipynb`.
+- **Diploma:** asistencia a al menos 7 de 8 sesiones (80%; máximo una falta).
 
 ### Reglas sugeridas
 
-- **Sugerido:** entregas tardías hasta 48 h con 10% de penalización; después no se califican.
 - **Sugerido:** cuenta como asistencia estar conectado al menos 90 de los 120 minutos; ver la grabación no cuenta.
 - **Sugerido:** un dataset propio para el proyecto debe aprobarse a más tardar en la Sesión 6.
 
-## Rúbrica del notebook de E1 (60 puntos)
+## Qué distingue una buena práctica integradora (`15`, con `tips`)
 
-- 10 pts: Calidad y tipos de variables (auditoría de duplicados, faltantes y `dtypes`).
-- 12 pts: Descripción y valores atípicos.
-- 12 pts: Agregación y comparación por `day`, `time` y `smoker`.
-- 12 pts: Visualizaciones (tipo adecuado, ejes y unidades rotulados).
-- 8 pts: Conclusiones respaldadas y sin lenguaje causal.
-- 6 pts: Reproducibilidad (corre de principio a fin).
+- Calidad y tipos de variables: auditoría de duplicados, faltantes y `dtypes`.
+- Descripción y valores atípicos.
+- Agregación y comparación por `day`, `time` y `smoker`.
+- Visualizaciones: tipo adecuado, ejes y unidades rotulados.
+- Conclusiones respaldadas y sin lenguaje causal.
+- Reproducibilidad: corre de principio a fin.
 
-## Rúbrica del Proyecto integrador (70 puntos, parte de E2)
+## Qué distingue un buen Proyecto integrador
 
-- 6 pts: Preguntas y contexto.
-- 10 pts: Calidad de datos (auditoría y decisiones justificadas).
-- 12 pts: Descripción y visualización.
-- 16 pts: Inferencia (pruebas adecuadas, supuestos, IC o *bootstrap*, tamaño del efecto).
-- 16 pts: Informe de hallazgos (resumen ejecutivo, incertidumbre, limitaciones).
-- 10 pts: Reproducibilidad en Codespaces.
+- Preguntas y contexto.
+- Calidad de datos: auditoría y decisiones justificadas.
+- Descripción y visualización.
+- Inferencia: pruebas adecuadas, supuestos, IC o *bootstrap*, tamaño del efecto.
+- Informe de hallazgos: resumen ejecutivo, incertidumbre, limitaciones.
+- Reproducibilidad en Codespaces.
 
-Escala por criterio: Excelente = 100%, Suficiente ≈ 60%, Insuficiente = 0-30%. Detalle completo en el mapa de sesiones.
+Detalle de cada aspecto en `18_bootstrap_e_interpretacion_de_intervalos.ipynb`.
 
 ## Checklist previa a clase
 
@@ -275,7 +272,7 @@ Escala por criterio: Excelente = 100%, Suficiente ≈ 60%, Insuficiente = 0-30%.
 
 - Se cubrieron los objetivos de la sesión.
 - Asistencia registrada en la hoja (P / F / R) con el reporte de Meet y el formulario.
-- Grabación y práctica sin calificación publicadas en Classroom.
+- Grabación y práctica publicadas en Classroom.
 - Aviso privado a quien acumule su primera falta; contactar antes de la sesión 3 a quien falte a las sesiones 1 y 2.
 - Dudas frecuentes registradas para mejorar los notebooks.
 

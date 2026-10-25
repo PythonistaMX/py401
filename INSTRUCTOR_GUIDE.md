@@ -229,10 +229,9 @@ Al terminar, el participante podrá:
 - III. Inferencia estadística: cuantificar la incertidumbre (IC, *bootstrap*) y aplicar pruebas con supuestos revisados y tamaño del efecto.
 - IV. Del análisis al informe: ejecutar un EDA reproducible y redactar un informe de hallazgos honesto sobre sus límites.
 
-## Práctica y diploma
+## Práctica
 
 - **Práctica:** los ejercicios de cada *notebook* se trabajan en clase y en Classroom, que también es el canal de dudas. La Sesión 4 cierra con la práctica integradora con `tips` (`15_visualizacion_efectiva`) y la Sesión 8 con preguntas de repaso de los Módulos III y IV (`26_del_notebook_al_informe`).
-- **Diploma:** asistencia a al menos 7 de 8 sesiones (80%; máximo una falta).
 
 ### Reglas sugeridas
 

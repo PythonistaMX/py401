@@ -52,12 +52,10 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 | III. Inferencia estadística | Muestreo, error estándar, intervalos de confianza, *bootstrap*; pruebas *t*, proporciones, chi cuadrada, ANOVA; supuestos; tamaño del efecto | `16`-`22` |
 | IV. Del análisis al informe | EDA completo paso a paso; reproducibilidad; redacción y comunicación del informe de hallazgos | `23`-`26` |
 
-### Práctica y diploma
+### Práctica
 
 * Los *notebooks* son **práctica**: los ejercicios y los retos se trabajan en clase y en Google Classroom, que también es el canal de dudas.
 * `15_visualizacion_efectiva.ipynb` cierra el Módulo II con una **práctica integradora** con `tips`, y `26_del_notebook_al_informe.ipynb` cierra el curso con **preguntas de repaso** de los Módulos III y IV.
-
-**Diploma:** requiere asistencia a **al menos 7 de las 8 sesiones** (80%; se permite como máximo una falta).
 
 ### 📚 Contenidos
 

@@ -37,7 +37,7 @@ jobs:
           from nbclient import NotebookClient
 
           # Todos los notebooks de tema de la raíz (NN_*.ipynb, sin importar cuántos haya) y sus
-          # soluciones (soluciones/NN_*_soluciones.ipynb). evaluaciones/ y proyecto/ no se ejecutan.
+          # soluciones (soluciones/NN_*_soluciones.ipynb).
           NOTEBOOKS = sorted(glob.glob("[0-9][0-9]_*.ipynb"))
           NOTEBOOKS += sorted(glob.glob(os.path.join("soluciones", "[0-9][0-9]_*_soluciones.ipynb")))
 

@@ -37,7 +37,7 @@ Un curso práctico de **8 sesiones en vivo de 2 horas** (16 horas) sobre noteboo
 * **Contrastar hipótesis con responsabilidad:** supuestos, valor *p* y tamaño del efecto.
 * **Comunicar hallazgos:** un EDA reproducible y un informe claro sobre sus límites.
 
-Todo el entorno se ejecuta en la nube mediante **GitHub Codespaces**, sin necesidad de instalación local, y los datos de las sesiones vienen incluidos en `data/` (no se necesita internet para los notebooks). Solo el *dataset* del Proyecto integrador se descarga aparte (ver [Datasets del Proyecto integrador](#-datasets-del-proyecto-integrador)).
+Todo el entorno se ejecuta en la nube mediante **GitHub Codespaces**, sin necesidad de instalación local, y los datos de las sesiones vienen incluidos en `data/` (no se necesita internet para los notebooks).
 
 ---
 
@@ -50,13 +50,12 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 | I. Datos y su calidad | *NumPy* y *pandas* esenciales; tipos de variables; sesgos de recolección; duplicados, inconsistencias y valores faltantes | `01`-`09` |
 | II. Describir y comparar | Estadística descriptiva; forma de la distribución; valores atípicos; agregación; relaciones; correlación vs. causalidad; visualización efectiva | `10`-`15` |
 | III. Inferencia estadística | Muestreo, error estándar, intervalos de confianza, *bootstrap*; pruebas *t*, proporciones, chi cuadrada, ANOVA; supuestos; tamaño del efecto | `16`-`22` |
-| IV. Proyecto integrador | EDA completo paso a paso; redacción y presentación del informe de hallazgos | `23`-`26` |
+| IV. Del análisis al informe | EDA completo paso a paso; reproducibilidad; redacción y comunicación del informe de hallazgos | `23`-`26` |
 
-### Práctica, Proyecto integrador y diploma
+### Práctica y diploma
 
 * Los *notebooks* son **práctica**: los ejercicios 🟢 y los retos 🔴 se trabajan en clase y en Google Classroom, que también es el canal de dudas.
 * `15_visualizacion_efectiva.ipynb` cierra el Módulo II con una **práctica integradora** con `tips`, y `26_del_notebook_al_informe.ipynb` cierra el curso con **preguntas de repaso** de los Módulos III y IV.
-* El **Proyecto integrador** es un EDA completo y reproducible con su informe de hallazgos; la consigna está en `18_bootstrap_e_interpretacion_de_intervalos.ipynb` y la plantilla en `proyecto/plantilla_proyecto_integrador.ipynb`.
 
 **Diploma:** requiere asistencia a **al menos 7 de las 8 sesiones** (80%; se permite como máximo una falta).
 
@@ -86,7 +85,7 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 - [21_proporciones_y_mas_de_dos_grupos.ipynb](21_proporciones_y_mas_de_dos_grupos.ipynb)
 - [22_tamano_del_efecto.ipynb](22_tamano_del_efecto.ipynb)
 - [23_eda_completo_con_mpg.ipynb](23_eda_completo_con_mpg.ipynb)
-- [24_reproducibilidad_y_arranque_del_proyecto.ipynb](24_reproducibilidad_y_arranque_del_proyecto.ipynb)
+- [24_reproducibilidad_de_un_eda.ipynb](24_reproducibilidad_de_un_eda.ipynb)
 - [25_estructura_del_informe_y_comunicacion.ipynb](25_estructura_del_informe_y_comunicacion.ipynb)
 - [26_del_notebook_al_informe.ipynb](26_del_notebook_al_informe.ipynb)
 
@@ -112,21 +111,17 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 #### 🔹 Módulo III: Inferencia estadística
 * `16` - Distribución muestral: ley de los grandes números, teorema central del límite, tamaño de muestra y diseño estratificado.
 * `17` - Error estándar e intervalos de confianza para medias y proporciones (Wald, Wilson, Clopper-Pearson); cobertura.
-* `18` - *Bootstrap* (`scipy.stats.bootstrap`), interpretación correcta de un IC y consigna del Proyecto integrador.
+* `18` - *Bootstrap* (`scipy.stats.bootstrap`) e interpretación correcta de un IC.
 * `19` - Lógica del contraste: H0/H1, valor *p*, errores tipo I y II, potencia.
 * `20` - Dos grupos: *t* de Student y de Welch, Mann-Whitney y permutación.
 * `21` - Proporciones y chi cuadrada; más de dos grupos: Levene, ANOVA, Welch y Tukey; comparaciones múltiples.
 * `22` - Tamaño del efecto: d de Cohen, V de Cramér y η².
 
-#### 🔹 Módulo IV: Proyecto integrador
+#### 🔹 Módulo IV: Del análisis al informe
 * `23` - EDA completo y reproducible sobre `mpg`, paso a paso.
-* `24` - Buenas prácticas de reproducibilidad y arranque del Proyecto integrador (descarga del *dataset*, preguntas y auditoría).
+* `24` - Reproducibilidad de un EDA: *Restart & Run All*, semillas, rutas relativas, funciones reutilizables y `requirements.txt`, aplicados a `mpg`.
 * `25` - Estructura del informe de hallazgos; comunicar IC y tamaños del efecto en lenguaje llano; gráfica final; qué no afirmar.
-* `26` - Del *notebook* al informe con `nbconvert`, revisión entre pares, presentaciones relámpago, preguntas de repaso y cierre del curso.
-
-Material del Proyecto integrador:
-
-* `proyecto/plantilla_proyecto_integrador.ipynb` - Plantilla del Proyecto integrador, con la estructura del EDA y del informe; descarga el *dataset* elegido a `data/proyecto/` y corre completa con `mpg.csv` mientras no se elija uno.
+* `26` - Del *notebook* al informe con `nbconvert`, taller de redacción y revisión entre pares, preguntas de repaso y cierre del curso.
 
 > **📝 Nota:** Los notebooks con práctica incluyen ejercicios básicos 🟢 y retos opcionales 🔴. Las celdas `# TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti. Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`); `01`, `23` y `25` no tienen ejercicios. Cada notebook es independiente y se puede abrir y ejecutar por separado.
 
@@ -135,30 +130,9 @@ Material del Proyecto integrador:
 * `penguins_limpio.csv` - versión limpia que genera `09_auditoria_de_calidad.ipynb` (se usa desde `10`; si falta, cada notebook la regenera).
 * `titanic.csv` - apoyo (calidad, proporciones e inferencia).
 * `tips.csv` - apoyo (agregación, relaciones, pruebas y práctica integradora del `15`).
-* `mpg.csv` - demostración de EDA completo (`23` y `24`) y respaldo del Proyecto integrador.
+* `mpg.csv` - demostración de EDA completo (`23`) y práctica de reproducibilidad (`24`).
 
 Los CSV provienen de [`mwaskom/seaborn-data`](https://github.com/mwaskom/seaborn-data), el repositorio que usa `sns.load_dataset()`. En el CSV de `penguins`, `sex` viene como `MALE`/`FEMALE` (en `sns.load_dataset("penguins")` es `Male`/`Female`); `09_auditoria_de_calidad.ipynb` hace esa homologación.
-
-#### 📦 Datasets del Proyecto integrador
-
-Los *datasets* del proyecto **no** vienen en el repositorio: se descargan a `data/proyecto/` (carpeta ignorada por *git*). Fichas completas (fuente, licencia, cita, columnas, problemas de calidad conocidos y comandos alternativos) en [`data/DATASETS.md`](data/DATASETS.md).
-
-| Clave | *Dataset* | Filas × columnas | Tamaño del CSV | Fuente | Licencia |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `diamonds` | Precios de diamantes | 53,940 × 10 | 2.6 MiB | [*ggplot2*](https://ggplot2.tidyverse.org/reference/diamonds.html) vía [`seaborn-data`](https://github.com/mwaskom/seaborn-data) | MIT (*ggplot2*) |
-| `adult` | Adult / Census Income | 48,842 × 15 | 5.1 MiB | [UCI, id 2](https://archive.ics.uci.edu/dataset/2/adult) | CC BY 4.0 |
-| `bike` | Bike Sharing (por hora) | 17,379 × 17 | 1.1 MiB | [UCI, id 275](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset) | CC BY 4.0 |
-| `wine` | Wine Quality (tinto + blanco) | 6,497 × 13 | 0.4 MiB | [UCI, id 186](https://archive.ics.uci.edu/dataset/186/wine+quality) | CC BY 4.0 |
-
-Desde la terminal del *Codespace*, en la raíz del repositorio (solo usa la biblioteca estándar y *pandas*):
-
-```bash
-python tools/descargar_datasets.py --lista              # claves y URL
-python tools/descargar_datasets.py wine                 # uno o varios: diamonds adult bike wine
-python tools/descargar_datasets.py todos --originales   # todos, más los ZIP oficiales del UCI
-```
-
-El notebook `24` y la plantilla del proyecto traen una celda que hace lo mismo con solo escribir la clave en `DATASET_PROYECTO`. **Sin internet:** sube el CSV descargado en otra computadora a `data/proyecto/<clave>.csv` desde el explorador del *Codespace*; si no hay archivo ni conexión, las celdas avisan y usan `mpg.csv` para que puedas seguir trabajando.
 
 ---
 

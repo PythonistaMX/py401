@@ -10,9 +10,9 @@ Los *notebooks* se numeran por tema, en orden, a lo largo de todo el curso; cada
 2. Sesión 2: calidad de datos y valores faltantes (07-09). Genera `data/penguins_limpio.csv` (`09`).
 3. Sesión 3: estadística descriptiva, forma de la distribución y valores atípicos (10-12).
 4. Sesión 4: agregación, relaciones entre variables y visualización efectiva (13-15). Cierra con la práctica integradora con `tips`.
-5. Sesión 5: incertidumbre, intervalos de confianza y *bootstrap* (16-18). Se publica la consigna del Proyecto integrador.
+5. Sesión 5: incertidumbre, intervalos de confianza y *bootstrap* (16-18).
 6. Sesión 6: pruebas de hipótesis y tamaño del efecto (19-22).
-7. Sesión 7: EDA completo paso a paso con `mpg` y arranque del proyecto (23-24).
+7. Sesión 7: EDA completo paso a paso con `mpg` y reproducibilidad (23-24).
 8. Sesión 8: informe de hallazgos y presentación (25-26). Cierra con preguntas de repaso de los Módulos III y IV.
 
 Cada *notebook* es independiente: tiene su propia celda de preparación (bibliotecas, `DATA` con `os.path.join` y semilla `401`) y, cuando necesita algo de un *notebook* anterior, lo vuelve a crear en la celda "Objetos de los *notebooks* anteriores". Los temas con ejercicios tienen su versión resuelta en `soluciones/NN_tema_soluciones.ipynb`; `01`, `23` y `25` no tienen ejercicios ni soluciones.
@@ -126,7 +126,7 @@ Al terminar, el participante podrá:
 
 **Notebooks:** [`16_distribucion_muestral`](16_distribucion_muestral.ipynb), [`17_error_estandar_e_intervalos_de_confianza`](17_error_estandar_e_intervalos_de_confianza.ipynb), [`18_bootstrap_e_interpretacion_de_intervalos`](18_bootstrap_e_interpretacion_de_intervalos.ipynb).
 
-**Descripción:** En esta sesión se cuantificará la incertidumbre de una estimación: se simulará la distribución muestral con *NumPy*, se calcularán errores estándar e intervalos de confianza para medias y proporciones con *SciPy* y *statsmodels*, y se construirán intervalos *bootstrap* con `scipy.stats.bootstrap`, usando `penguins`. Al final se presenta la consigna del **Proyecto integrador**.
+**Descripción:** En esta sesión se cuantificará la incertidumbre de una estimación: se simulará la distribución muestral con *NumPy*, se calcularán errores estándar e intervalos de confianza para medias y proporciones con *SciPy* y *statsmodels*, y se construirán intervalos *bootstrap* con `scipy.stats.bootstrap`, usando `penguins`.
 
 **Objetivo:** **Acompañar cada estimación con su incertidumbre, con fórmulas clásicas y con remuestreo, e interpretarla correctamente.**
 
@@ -144,7 +144,7 @@ Al terminar, el participante podrá:
 | 30 | Distribución muestral: ley de los grandes números, teorema central del límite, tamaño de muestra y diseño | `16_distribucion_muestral` |
 | 25 | Error estándar e intervalos de confianza | `17_error_estandar_e_intervalos_de_confianza` |
 | 25 | *Bootstrap* | `18_bootstrap_e_interpretacion_de_intervalos` |
-| 15 | Interpretación correcta de un IC y consigna del Proyecto integrador | `18_bootstrap_e_interpretacion_de_intervalos` |
+| 15 | Interpretación correcta de un IC | `18_bootstrap_e_interpretacion_de_intervalos` |
 | 20 | Ejercicio de la sesión y cierre | `18_bootstrap_e_interpretacion_de_intervalos` |
 
 ### Sesión 6 · Módulo III: Inferencia estadística
@@ -173,11 +173,11 @@ Al terminar, el participante podrá:
 | 25 | Más de dos grupos | `21_proporciones_y_mas_de_dos_grupos` |
 | 20 | Tamaño del efecto y ejercicio de la sesión | `22_tamano_del_efecto` |
 
-### Sesión 7 · Módulo IV: Proyecto integrador
+### Sesión 7 · Módulo IV: Del análisis al informe
 
-**Notebooks:** [`23_eda_completo_con_mpg`](23_eda_completo_con_mpg.ipynb), [`24_reproducibilidad_y_arranque_del_proyecto`](24_reproducibilidad_y_arranque_del_proyecto.ipynb).
+**Notebooks:** [`23_eda_completo_con_mpg`](23_eda_completo_con_mpg.ipynb), [`24_reproducibilidad_de_un_eda`](24_reproducibilidad_de_un_eda.ipynb).
 
-**Descripción:** En esta sesión se recorrerá de principio a fin un flujo de EDA reproducible sobre `mpg`: pregunta, auditoría de calidad, limpieza, distribuciones, relaciones, una prueba con tamaño del efecto y conclusiones. Después, cada participante arrancará su proyecto con la plantilla `proyecto/plantilla_proyecto_integrador.ipynb`.
+**Descripción:** En esta sesión se recorrerá de principio a fin un flujo de EDA reproducible sobre `mpg`: pregunta, auditoría de calidad, limpieza, distribuciones, relaciones, una prueba con tamaño del efecto y conclusiones. Después se revisarán las buenas prácticas de reproducibilidad (*Restart & Run All*, semillas, rutas relativas, datos crudos intactos, funciones reutilizables y `requirements.txt`) y se aplicarán con ejercicios sobre `mpg`.
 
 **Objetivo:** **Recorrer un EDA completo y reproducible sobre un *dataset* nuevo, tomando y documentando cada decisión.**
 
@@ -185,7 +185,7 @@ Al terminar, el participante podrá:
 1. Seguir la estructura pregunta → datos → calidad → descripción → relaciones → inferencia → conclusiones.
 2. Escribir funciones reutilizables para auditar y resumir cualquier *dataset*.
 3. Detectar un confusor en un análisis real y ajustar la conclusión.
-4. Arrancar tu proyecto: preguntas y auditoría inicial.
+4. Aplicar buenas prácticas de reproducibilidad: *Restart & Run All*, semillas, rutas relativas, datos crudos intactos y `requirements.txt`.
 
 **Agenda (120 min):**
 
@@ -193,14 +193,14 @@ Al terminar, el participante podrá:
 |---|---|---|
 | 10 | Estructura de un EDA | `23_eda_completo_con_mpg` |
 | 60 | Demostración en vivo con `mpg` | `23_eda_completo_con_mpg` |
-| 15 | Buenas prácticas de reproducibilidad | `24_reproducibilidad_y_arranque_del_proyecto` |
-| 35 | Taller: arranque del proyecto | `24_reproducibilidad_y_arranque_del_proyecto` |
+| 15 | Buenas prácticas de reproducibilidad | `24_reproducibilidad_de_un_eda` |
+| 35 | Taller: reproducibilidad aplicada a `mpg` (preguntas, auditoría y ejercicios) | `24_reproducibilidad_de_un_eda` |
 
-### Sesión 8 · Módulo IV: Proyecto integrador
+### Sesión 8 · Módulo IV: Del análisis al informe
 
 **Notebooks:** [`25_estructura_del_informe_y_comunicacion`](25_estructura_del_informe_y_comunicacion.ipynb), [`26_del_notebook_al_informe`](26_del_notebook_al_informe.ipynb).
 
-**Descripción:** En esta sesión se convertirá el análisis en un informe claro, honesto sobre sus límites y orientado a la decisión: estructura del informe, cómo comunicar intervalos de confianza y tamaños del efecto en lenguaje llano, la gráfica final, la exportación con `nbconvert` y la revisión entre pares. Al final se hacen las presentaciones relámpago y las **preguntas de repaso**, y se cierra el curso.
+**Descripción:** En esta sesión se convertirá el análisis en un informe claro, honesto sobre sus límites y orientado a la decisión: estructura del informe, cómo comunicar intervalos de confianza y tamaños del efecto en lenguaje llano, la gráfica final, la exportación con `nbconvert` y la revisión entre pares. Al final se hacen las **preguntas de repaso** y se cierra el curso.
 
 **Objetivo:** **Convertir un análisis exploratorio en un informe de hallazgos claro, verificable y sin afirmaciones que los datos no respaldan.**
 
@@ -219,26 +219,24 @@ Al terminar, el participante podrá:
 | 25 | Estructura del informe | `25_estructura_del_informe_y_comunicacion` |
 | 20 | Comunicar números: IC y tamaño del efecto en lenguaje llano, gráfica final, qué no afirmar | `25_estructura_del_informe_y_comunicacion` |
 | 15 | Del *notebook* al informe: exportación con `nbconvert` | `26_del_notebook_al_informe` |
-| 30 | Taller de redacción del proyecto y revisión entre pares | `26_del_notebook_al_informe` |
-| 20 | Presentaciones relámpago, repaso y cierre del curso | `26_del_notebook_al_informe` |
+| 30 | Taller de redacción (resumen ejecutivo y hallazgo) y revisión entre pares | `26_del_notebook_al_informe` |
+| 20 | Repaso (preguntas de los Módulos III y IV) y cierre del curso | `26_del_notebook_al_informe` |
 
 ## Resultados de aprendizaje por módulo
 
 - I. Datos y su calidad: clasificar variables, auditar calidad y tratar faltantes de forma justificada.
 - II. Describir y comparar: describir distribuciones con medidas robustas, detectar atípicos, comparar grupos y comunicar relaciones sin confundir correlación con causalidad.
 - III. Inferencia estadística: cuantificar la incertidumbre (IC, *bootstrap*) y aplicar pruebas con supuestos revisados y tamaño del efecto.
-- IV. Proyecto integrador: ejecutar un EDA reproducible y redactar un informe de hallazgos honesto sobre sus límites.
+- IV. Del análisis al informe: ejecutar un EDA reproducible y redactar un informe de hallazgos honesto sobre sus límites.
 
-## Práctica, proyecto y diploma
+## Práctica y diploma
 
 - **Práctica:** los ejercicios de cada *notebook* se trabajan en clase y en Classroom, que también es el canal de dudas. La Sesión 4 cierra con la práctica integradora con `tips` (`15_visualizacion_efectiva`) y la Sesión 8 con preguntas de repaso de los Módulos III y IV (`26_del_notebook_al_informe`).
-- **Proyecto integrador:** la consigna se presenta en la Sesión 5 (`18_bootstrap_e_interpretacion_de_intervalos.ipynb`) y la plantilla está en `proyecto/plantilla_proyecto_integrador.ipynb`.
 - **Diploma:** asistencia a al menos 7 de 8 sesiones (80%; máximo una falta).
 
 ### Reglas sugeridas
 
 - **Sugerido:** cuenta como asistencia estar conectado al menos 90 de los 120 minutos; ver la grabación no cuenta.
-- **Sugerido:** un dataset propio para el proyecto debe aprobarse a más tardar en la Sesión 6.
 
 ## Qué distingue una buena práctica integradora (`15`, con `tips`)
 
@@ -248,17 +246,6 @@ Al terminar, el participante podrá:
 - Visualizaciones: tipo adecuado, ejes y unidades rotulados.
 - Conclusiones respaldadas y sin lenguaje causal.
 - Reproducibilidad: corre de principio a fin.
-
-## Qué distingue un buen Proyecto integrador
-
-- Preguntas y contexto.
-- Calidad de datos: auditoría y decisiones justificadas.
-- Descripción y visualización.
-- Inferencia: pruebas adecuadas, supuestos, IC o *bootstrap*, tamaño del efecto.
-- Informe de hallazgos: resumen ejecutivo, incertidumbre, limitaciones.
-- Reproducibilidad en Codespaces.
-
-Detalle de cada aspecto en `18_bootstrap_e_interpretacion_de_intervalos.ipynb`.
 
 ## Checklist previa a clase
 

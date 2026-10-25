@@ -52,10 +52,12 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 | III. Inferencia estadística | Muestreo, error estándar, intervalos de confianza, *bootstrap*; pruebas *t*, proporciones, chi cuadrada, ANOVA; supuestos; tamaño del efecto | `16`-`22` |
 | IV. Del análisis al informe | EDA completo paso a paso; reproducibilidad; redacción y comunicación del informe de hallazgos | `23`-`26` |
 
-### Práctica
+### Práctica y diploma
 
 * Los *notebooks* son **práctica**: los ejercicios y los retos se trabajan en clase y en Google Classroom, que también es el canal de dudas.
 * `15_visualizacion_efectiva.ipynb` cierra el Módulo II con una **práctica integradora** con `tips`, y `26_del_notebook_al_informe.ipynb` cierra el curso con **preguntas de repaso** de los Módulos III y IV.
+
+**Diploma:** 80% de asistencia y 70% de promedio en los dos exámenes.
 
 ### 📚 Contenidos
 
@@ -88,7 +90,7 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 - [26_del_notebook_al_informe.ipynb](26_del_notebook_al_informe.ipynb)
 
 #### 🔹 Módulo I: Datos y su calidad
-* `01` - Bienvenida, reglas del curso (asistencia y diploma); arranque del *Codespace*.
+* `01` - Bienvenida, reglas del curso (diploma: 80% de asistencia y 70% de promedio en los dos exámenes); arranque del *Codespace*.
 * `02` - *NumPy* esencial: arreglos, `dtype`, vectorización, *broadcasting*, máscaras y decisiones que cambian resultados (`ddof`, `NaN`, desbordamiento, flotantes).
 * `03` - *pandas* 3 esencial: *Copy-on-Write*, tipo `str`, `read_csv`, `info`, `describe`, `loc`/`iloc`, filtros, `assign` y faltantes silenciosos.
 * `04` - Tipos de variables: taxonomía, escalas de Stevens, `dtype` de *pandas* 3, `category`, tipos *nullable* y fechas.

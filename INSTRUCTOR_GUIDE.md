@@ -238,7 +238,7 @@ Al terminar, el participante podrá:
 
 - **Sugerido:** cuenta como asistencia estar conectado al menos 90 de los 120 minutos; ver la grabación no cuenta.
 
-## Qué distingue una buena práctica integradora (`15`, con `tips`)
+## Lista de verificación de la práctica integradora (`15`, con `tips`)
 
 - Calidad y tipos de variables: auditoría de duplicados, faltantes y `dtypes`.
 - Descripción y valores atípicos.

@@ -19,7 +19,7 @@ Cada *notebook* es independiente: tiene su propia celda de preparación (bibliot
 
 ## Objetivos y agenda por sesión
 
-En las agendas, las subsecciones marcadas con 📖 **Lectura opcional** se revisan en casa. Los ejercicios 🟢 que no alcancen a resolverse en clase quedan como práctica; los retos 🔴 son siempre opcionales.
+En las agendas, las subsecciones marcadas con 📖 **Lectura opcional** se revisan en casa. Los ejercicios que no alcancen a resolverse en clase quedan como práctica; los retos son siempre opcionales.
 
 ### Sesión 1 · Módulo I: Datos y su calidad
 
@@ -267,5 +267,5 @@ Al terminar, el participante podrá:
 
 - Diferencias de entorno: usar Codespaces por defecto (Python 3.12 y versiones mínimas `>=` en `requirements.txt`, con *pandas* 3).
 - Codespace lento la primera vez: pedir a los alumnos que lo creen antes de la sesión 1.
-- Tiempo insuficiente: priorizar ejercicios 🟢 y dejar los retos 🔴 como práctica.
+- Tiempo insuficiente: priorizar ejercicios y dejar los retos como práctica.
 - `penguins_limpio.csv` desalineado: `09_auditoria_de_calidad.ipynb` lo regenera y los *notebooks* `10` en adelante lo recrean si no existe; la versión del repositorio es la de referencia.

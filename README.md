@@ -54,7 +54,7 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 
 ### Práctica y diploma
 
-* Los *notebooks* son **práctica**: los ejercicios 🟢 y los retos 🔴 se trabajan en clase y en Google Classroom, que también es el canal de dudas.
+* Los *notebooks* son **práctica**: los ejercicios y los retos se trabajan en clase y en Google Classroom, que también es el canal de dudas.
 * `15_visualizacion_efectiva.ipynb` cierra el Módulo II con una **práctica integradora** con `tips`, y `26_del_notebook_al_informe.ipynb` cierra el curso con **preguntas de repaso** de los Módulos III y IV.
 
 **Diploma:** requiere asistencia a **al menos 7 de las 8 sesiones** (80%; se permite como máximo una falta).
@@ -123,7 +123,7 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 * `25` - Estructura del informe de hallazgos; comunicar IC y tamaños del efecto en lenguaje llano; gráfica final; qué no afirmar.
 * `26` - Del *notebook* al informe con `nbconvert`, taller de redacción y revisión entre pares, preguntas de repaso y cierre del curso.
 
-> **📝 Nota:** Los notebooks con práctica incluyen ejercicios básicos 🟢 y retos opcionales 🔴. Las celdas `# TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti. Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`); `01`, `23` y `25` no tienen ejercicios. Cada notebook es independiente y se puede abrir y ejecutar por separado.
+> **📝 Nota:** Los notebooks con práctica incluyen ejercicios básicos y retos opcionales. Las celdas `# TU CÓDIGO AQUÍ` y **✍️ Tu respuesta** son para ti. Las versiones resueltas están en `soluciones/` (`NN_..._soluciones.ipynb`); `01`, `23` y `25` no tienen ejercicios. Cada notebook es independiente y se puede abrir y ejecutar por separado.
 
 #### 📁 Datos (`data/`)
 * `penguins.csv` - Palmer Penguins, dataset principal (notebooks `03` a `22`).

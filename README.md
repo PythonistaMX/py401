@@ -55,7 +55,7 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 ### Práctica
 
 * Los *notebooks* son **práctica**: los ejercicios y los retos se trabajan en clase y en Google Classroom, que también es el canal de dudas.
-* `15_visualizacion_efectiva.ipynb` cierra el Módulo II con una **práctica integradora** con `tips`, y `26_del_notebook_al_informe.ipynb` cierra el curso con **preguntas de repaso** de los Módulos III y IV.
+* `26_del_notebook_al_informe.ipynb` cierra el curso con **preguntas de repaso** de los Módulos III y IV.
 
 ### 📚 Contenidos
 
@@ -104,7 +104,7 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 * `12` - Valores atípicos (IQR, *z*, *z* robusto), ¿error o valor real?, transformación logarítmica y ejercicio integrador.
 * `13` - Agregación: `groupby`/`agg`, `pivot_table`, `crosstab` y `melt`.
 * `14` - Relaciones entre variables: Pearson y Spearman, correlación vs. causalidad, confusores y paradoja de Simpson.
-* `15` - Visualización efectiva con *Matplotlib* y *Seaborn*, ejercicio de la sesión y práctica integradora con `tips`.
+* `15` - Visualización efectiva con *Matplotlib* y *Seaborn*; ejercicio de la sesión.
 
 #### 🔹 Módulo III: Inferencia estadística
 * `16` - Distribución muestral: ley de los grandes números, teorema central del límite, tamaño de muestra y diseño estratificado.
@@ -127,7 +127,7 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 * `penguins.csv` - Palmer Penguins, dataset principal (notebooks `03` a `22`).
 * `penguins_limpio.csv` - versión limpia que genera `09_auditoria_de_calidad.ipynb` (se usa desde `10`; si falta, cada notebook la regenera).
 * `titanic.csv` - apoyo (calidad, proporciones e inferencia).
-* `tips.csv` - apoyo (agregación, relaciones, pruebas y práctica integradora del `15`).
+* `tips.csv` - apoyo (agregación, relaciones y pruebas).
 * `mpg.csv` - demostración de EDA completo (`23`) y práctica de reproducibilidad (`24`).
 
 Los CSV provienen de [`mwaskom/seaborn-data`](https://github.com/mwaskom/seaborn-data), el repositorio que usa `sns.load_dataset()`. En el CSV de `penguins`, `sex` viene como `MALE`/`FEMALE` (en `sns.load_dataset("penguins")` es `Male`/`Female`); `09_auditoria_de_calidad.ipynb` hace esa homologación.

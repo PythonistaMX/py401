@@ -102,7 +102,7 @@ Al terminar, el participante podrá:
 3. Reconocer confusores y la paradoja de Simpson.
 4. Elegir la gráfica adecuada y cuidar escalas, facetas, color y anotaciones.
 
-**Agenda (120 min):**
+**Agenda (110 min):**
 
 | Min | Bloque | Notebook |
 |---|---|---|

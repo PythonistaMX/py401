@@ -39,7 +39,7 @@ Al terminar, el participante podrá:
 
 | Min | Bloque | Notebook |
 |---|---|---|
-| 10 | Bienvenida, reglas del curso (diploma: 80% de asistencia y 70% de promedio en los dos exámenes), arranque del *Codespace* | `01_bienvenida_y_reglas_del_curso` |
+| 10 | Bienvenida, reglas del curso, arranque del *Codespace* | `01_bienvenida_y_reglas_del_curso` |
 | 15 | *NumPy*: repaso exprés y decisiones que cambian resultados | `02_numpy_esencial` |
 | 25 | *pandas*: repaso exprés, *pandas* 3 y decisiones al explorar | `03_pandas_3_esencial` |
 | 25 | Tipos de variables: taxonomía, escalas de medición y `dtype` | `04_tipos_de_variables` |
@@ -229,10 +229,9 @@ Al terminar, el participante podrá:
 - III. Inferencia estadística: cuantificar la incertidumbre (IC, *bootstrap*) y aplicar pruebas con supuestos revisados y tamaño del efecto.
 - IV. Del análisis al informe: ejecutar un EDA reproducible y redactar un informe de hallazgos honesto sobre sus límites.
 
-## Práctica y diploma
+## Práctica
 
 - **Práctica:** los ejercicios de cada *notebook* se trabajan en clase y en Classroom, que también es el canal de dudas. La Sesión 4 cierra con la práctica integradora con `tips` (`15_visualizacion_efectiva`) y la Sesión 8 con preguntas de repaso de los Módulos III y IV (`26_del_notebook_al_informe`).
-- **Diploma:** 80% de asistencia y 70% de promedio en los dos exámenes.
 
 ### Reglas sugeridas
 

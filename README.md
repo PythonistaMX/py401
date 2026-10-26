@@ -43,7 +43,7 @@ Todo el entorno se ejecuta en la nube mediante **GitHub Codespaces**, sin necesi
 
 ## 📅 Temario y Estructura
 
-El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. Los *notebooks* se numeran por tema y cada sesión abarca varios (la correspondencia entre sesiones y *notebooks* está en [`INSTRUCTOR_GUIDE.md`](INSTRUCTOR_GUIDE.md)).
+El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. Los *notebooks* se numeran por tema y cada sesión abarca varios.
 
 | Módulo | Temas | Notebooks |
 | :--- | :--- | :--- |

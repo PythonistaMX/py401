@@ -4,16 +4,7 @@ Guía operativa para impartir **Py401 · EDA Práctico** con consistencia técni
 
 ## Estructura (8 sesiones de 2 horas, 26 *notebooks*)
 
-Los *notebooks* se numeran por tema, en orden, a lo largo de todo el curso; cada sesión abarca varios. Esta es la única tabla que relaciona sesiones y *notebooks*:
-
-1. Sesión 1: *NumPy* y *pandas* esenciales, tipos de variables y sesgos de recolección (01-06).
-2. Sesión 2: calidad de datos y valores faltantes (07-09). Genera `data/penguins_limpio.csv` (`09`).
-3. Sesión 3: estadística descriptiva, forma de la distribución y valores atípicos (10-12).
-4. Sesión 4: agregación, relaciones entre variables y visualización efectiva (13-15). Cierra con la práctica integradora con `tips`.
-5. Sesión 5: incertidumbre, intervalos de confianza y *bootstrap* (16-18).
-6. Sesión 6: pruebas de hipótesis y tamaño del efecto (19-22).
-7. Sesión 7: EDA completo paso a paso con `mpg` y reproducibilidad (23-24).
-8. Sesión 8: informe de hallazgos y presentación (25-26). Cierra con preguntas de repaso de los Módulos III y IV.
+Los *notebooks* se numeran por tema, en orden, a lo largo de todo el curso; cada sesión abarca varios, como indica la agenda de cada sesión más abajo.
 
 Cada *notebook* es independiente: tiene su propia celda de preparación (bibliotecas, `DATA` con `os.path.join` y semilla `401`) y, cuando necesita algo de un *notebook* anterior, lo vuelve a crear en la celda "Objetos de los *notebooks* anteriores". Los temas con ejercicios tienen su versión resuelta en `soluciones/NN_tema_soluciones.ipynb`; `01`, `23` y `25` no tienen ejercicios ni soluciones.
 
@@ -101,7 +92,7 @@ Al terminar, el participante podrá:
 
 **Notebooks:** [`13_agregacion`](13_agregacion.ipynb), [`14_relaciones_entre_variables`](14_relaciones_entre_variables.ipynb), [`15_visualizacion_efectiva`](15_visualizacion_efectiva.ipynb).
 
-**Descripción:** En esta sesión se resumirán datos por grupos (`groupby`, `pivot_table`, `crosstab`, `melt`), se medirán relaciones entre variables con las correlaciones de Pearson y Spearman sin confundir correlación con causalidad (confusores y paradoja de Simpson) y se construirán gráficas claras con *Matplotlib* y *Seaborn*. Al final se propone una **práctica integradora** con `tips`.
+**Descripción:** En esta sesión se resumirán datos por grupos (`groupby`, `pivot_table`, `crosstab`, `melt`), se medirán relaciones entre variables con las correlaciones de Pearson y Spearman sin confundir correlación con causalidad (confusores y paradoja de Simpson) y se construirán gráficas claras con *Matplotlib* y *Seaborn*.
 
 **Objetivo:** **Resumir por grupos, medir relaciones entre variables y comunicarlas con gráficas claras, sin confundir correlación con causalidad.**
 
@@ -120,7 +111,6 @@ Al terminar, el participante podrá:
 | 25 | Relaciones entre variables | `14_relaciones_entre_variables` |
 | 30 | Visualización efectiva | `15_visualizacion_efectiva` |
 | 20 | Ejercicio de la sesión | `15_visualizacion_efectiva` |
-| 10 | Práctica integradora de los Módulos I y II (consigna con `tips`) | `15_visualizacion_efectiva` |
 
 ### Sesión 5 · Módulo III: Inferencia estadística
 
@@ -231,20 +221,11 @@ Al terminar, el participante podrá:
 
 ## Práctica
 
-- **Práctica:** los ejercicios de cada *notebook* se trabajan en clase y en Classroom, que también es el canal de dudas. La Sesión 4 cierra con la práctica integradora con `tips` (`15_visualizacion_efectiva`) y la Sesión 8 con preguntas de repaso de los Módulos III y IV (`26_del_notebook_al_informe`).
+- **Práctica:** los ejercicios de cada *notebook* se trabajan en clase y en Classroom, que también es el canal de dudas. La Sesión 8 cierra con preguntas de repaso de los Módulos III y IV (`26_del_notebook_al_informe`).
 
 ### Reglas sugeridas
 
 - **Sugerido:** cuenta como asistencia estar conectado al menos 90 de los 120 minutos; ver la grabación no cuenta.
-
-## Lista de verificación de la práctica integradora (`15`, con `tips`)
-
-- Calidad y tipos de variables: auditoría de duplicados, faltantes y `dtypes`.
-- Descripción y valores atípicos.
-- Agregación y comparación por `day`, `time` y `smoker`.
-- Visualizaciones: tipo adecuado, ejes y unidades rotulados.
-- Conclusiones respaldadas y sin lenguaje causal.
-- Reproducibilidad: corre de principio a fin.
 
 ## Checklist previa a clase
 

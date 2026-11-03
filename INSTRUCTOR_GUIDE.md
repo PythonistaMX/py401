@@ -146,11 +146,11 @@ Al terminar, el participante podrá:
 **Objetivo:** **Elegir la prueba adecuada, revisar sus supuestos e informar el tamaño del efecto junto con el p-value.**
 
 Al terminar, el participante podrá:
-1. Explicar H0/H1, el p-value, los errores tipo I y II, la potencia y el riesgo de las comparaciones múltiples.
+1. Distinguir un experimento de un estudio observacional y decir qué permite concluir cada diseño (causa con asignación al azar, generalización con muestreo al azar); plantear una sola H0 y una sola H1 por prueba y explicar el p-value, los errores tipo I y II, la potencia y el riesgo de las comparaciones múltiples.
 2. Comparar dos grupos con *t* de Welch, Mann-Whitney o permutación, según los datos.
-3. Probar proporciones y la independencia de dos variables categóricas.
+3. Probar proporciones y la independencia de dos variables categóricas, y construir por permutación la distribución de la chi cuadrada y de *F* bajo H0 antes de usar la distribución teórica.
 4. Comparar más de dos grupos con el ANOVA de Welch por defecto, describir la dispersión con Levene sin que decida la prueba y localizar diferencias con Tukey.
-5. Reportar d de Cohen, V de Cramér y η², e interpretar su magnitud.
+5. Reportar d de Cohen, V de Cramér y η², e interpretar su magnitud; para dos proporciones, distinguir la diferencia en puntos, el riesgo relativo y la razón de momios.
 
 **Agenda (120 min):**
 
@@ -162,6 +162,12 @@ Al terminar, el participante podrá:
 | 20 | Proporciones y variables categóricas | `21_proporciones_y_mas_de_dos_grupos` |
 | 25 | Más de dos grupos | `21_proporciones_y_mas_de_dos_grupos` |
 | 20 | Tamaño del efecto y ejercicio de la sesión | `22_tamano_del_efecto` |
+
+**Notas didácticas del Módulo III:**
+* El 19 presenta, antes del p-value, el ciclo de una investigación, la diferencia entre experimento y estudio observacional, la tabla del alcance de la inferencia y la regla de una H0 y una H1 por prueba (en el ANOVA, H1 es «al menos una media difiere»).
+* En los ejemplos resueltos del 19 al 22 hay pausas **🤔 Explícalo con tus palabras** en los pasos clave. En las soluciones, cada pausa trae una explicación posible para orientar la discusión; no llevan puntaje.
+* El 21 construye por permutación la distribución de la chi cuadrada (clase y supervivencia) y la de *F* (propina porcentual por día) antes de compararlas con las curvas teóricas. El cálculo del margen de Tukey (*q* entre la raíz de 2) quedó en un 📖 *Para profundizar* opcional.
+* El 22 presenta en el cuerpo la diferencia de proporciones, el riesgo relativo y la razón de momios (sexo y supervivencia), antes del ejercicio de viajar solo.
 
 ### Sesión 7 · Módulo IV: Del análisis al informe
 

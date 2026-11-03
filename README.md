@@ -34,7 +34,7 @@ Un curso práctico de **8 sesiones en vivo de 2 horas** (16 horas) sobre noteboo
 * **Comparar grupos y medir relaciones:** agregaciones, correlación vs. causalidad y paradoja de Simpson.
 * **Visualizar con eficacia:** elegir la gráfica correcta con *Matplotlib* y *Seaborn*.
 * **Cuantificar la incertidumbre:** error estándar, intervalos de confianza y *bootstrap* con *SciPy* y *statsmodels*.
-* **Contrastar hipótesis con responsabilidad:** supuestos, valor *p* y tamaño del efecto.
+* **Contrastar hipótesis con responsabilidad:** supuestos, p-value y tamaño del efecto.
 * **Comunicar hallazgos:** un EDA reproducible y un informe claro sobre sus límites.
 
 Todo el entorno se ejecuta en la nube mediante **GitHub Codespaces**, sin necesidad de instalación local, y los datos de las sesiones vienen incluidos en `data/` (no se necesita internet para los notebooks).
@@ -110,7 +110,7 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 * `16` - Distribución muestral: ley de los grandes números, teorema central del límite, tamaño de muestra y diseño estratificado.
 * `17` - Error estándar e intervalos de confianza para medias y proporciones (Wald, Wilson, Clopper-Pearson); cobertura.
 * `18` - *Bootstrap* (`scipy.stats.bootstrap`) e interpretación correcta de un IC.
-* `19` - Lógica del contraste: H0/H1, valor *p*, errores tipo I y II, potencia.
+* `19` - Lógica del contraste: H0/H1, p-value, errores tipo I y II, potencia.
 * `20` - Dos grupos: *t* de Student y de Welch, Mann-Whitney y permutación.
 * `21` - Proporciones y chi cuadrada; más de dos grupos: ANOVA de Welch, Levene (solo descriptivo) y Tukey; comparaciones múltiples.
 * `22` - Tamaño del efecto: d de Cohen, V de Cramér y η².

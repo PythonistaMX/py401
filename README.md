@@ -27,7 +27,7 @@ Este curso asume conocimiento previo de *Python* y nociones básicas de *NumPy* 
 
 ## 🚀 Acerca del Curso
 
-Un curso práctico de **8 sesiones en vivo de 2 horas** (16 horas) sobre notebooks de *Jupyter* que corren en **GitHub Codespaces**, con práctica y dudas en **Google Classroom**. Al completarlo serás capaz de:
+Un curso práctico de **8 sesiones en vivo de 2 horas** (16 horas) sobre notebooks de *Jupyter* que corren en **GitHub Codespaces**. Al completarlo serás capaz de:
 
 * **Auditar la calidad de los datos:** tipos de variables, duplicados, inconsistencias, valores faltantes y sesgos de recolección.
 * **Describir distribuciones con criterio:** medidas robustas, forma de la distribución y valores atípicos.

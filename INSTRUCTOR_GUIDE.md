@@ -227,7 +227,7 @@ Al terminar, el participante podrá:
 
 ## Práctica
 
-- **Práctica:** los ejercicios de cada *notebook* se trabajan en clase y en Classroom, que también es el canal de dudas. La Sesión 8 cierra con preguntas de repaso de los Módulos III y IV (`26_del_notebook_al_informe`).
+- **Práctica:** los ejercicios de cada *notebook* se trabajan en clase. La Sesión 8 cierra con preguntas de repaso de los Módulos III y IV (`26_del_notebook_al_informe`).
 
 ### Reglas sugeridas
 
@@ -238,14 +238,14 @@ Al terminar, el participante podrá:
 - Codespace creado desde `main` y dependencias instaladas (`postCreateCommand`).
 - Los *notebooks* de la sesión y sus versiones en `soluciones/` corren de principio a fin (workflow `notebooks-smoke.yml` en verde).
 - Datos disponibles en `data/` (no se necesita internet).
-- Material de la sesión publicado en el tema correspondiente de Classroom.
+- Material de la sesión publicado.
 - Formulario de pase de lista abierto durante los primeros 30 minutos y al cierre.
 
 ## Checklist de cierre de sesión
 
 - Se cubrieron los objetivos de la sesión.
 - Asistencia registrada en la hoja (P / F / R) con el reporte de Meet y el formulario.
-- Grabación y práctica publicadas en Classroom.
+- Grabación y práctica publicadas.
 - Aviso privado a quien acumule su primera falta; contactar antes de la sesión 3 a quien falte a las sesiones 1 y 2.
 - Dudas frecuentes registradas para mejorar los notebooks.
 

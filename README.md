@@ -54,7 +54,7 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 
 ### Práctica
 
-* Los *notebooks* son **práctica**: los ejercicios y los retos se trabajan en clase y en Google Classroom, que también es el canal de dudas.
+* Los *notebooks* son **práctica**: los ejercicios y los retos se trabajan en clase.
 * `26_del_notebook_al_informe.ipynb` cierra el curso con **preguntas de repaso** de los Módulos III y IV.
 
 ### 📚 Contenidos

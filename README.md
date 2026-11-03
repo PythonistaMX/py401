@@ -112,7 +112,7 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 * `18` - *Bootstrap* (`scipy.stats.bootstrap`) e interpretación correcta de un IC.
 * `19` - Lógica del contraste: H0/H1, valor *p*, errores tipo I y II, potencia.
 * `20` - Dos grupos: *t* de Student y de Welch, Mann-Whitney y permutación.
-* `21` - Proporciones y chi cuadrada; más de dos grupos: Levene, ANOVA, Welch y Tukey; comparaciones múltiples.
+* `21` - Proporciones y chi cuadrada; más de dos grupos: ANOVA de Welch, Levene (solo descriptivo) y Tukey; comparaciones múltiples.
 * `22` - Tamaño del efecto: d de Cohen, V de Cramér y η².
 
 #### 🔹 Módulo IV: Del análisis al informe

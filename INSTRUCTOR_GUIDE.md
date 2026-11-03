@@ -141,7 +141,7 @@ Al terminar, el participante podrá:
 
 **Notebooks:** [`19_logica_del_contraste`](19_logica_del_contraste.ipynb), [`20_pruebas_para_dos_grupos`](20_pruebas_para_dos_grupos.ipynb), [`21_proporciones_y_mas_de_dos_grupos`](21_proporciones_y_mas_de_dos_grupos.ipynb), [`22_tamano_del_efecto`](22_tamano_del_efecto.ipynb).
 
-**Descripción:** En esta sesión se aplicarán pruebas *t* de Student y de Welch, Mann-Whitney, pruebas por permutación, la prueba *z* de proporciones, la chi cuadrada de independencia y el ANOVA de una vía con Levene, Welch y Tukey, siempre acompañadas del tamaño del efecto (d de Cohen, V de Cramér y η²), usando `penguins`, `titanic` y `tips`.
+**Descripción:** En esta sesión se aplicarán pruebas *t* de Student y de Welch, Mann-Whitney, pruebas por permutación, la prueba *z* de proporciones, la chi cuadrada de independencia y el ANOVA de una vía de Welch y Tukey (con Levene solo como descripción de la dispersión), siempre acompañadas del tamaño del efecto (d de Cohen, V de Cramér y η²), usando `penguins`, `titanic` y `tips`.
 
 **Objetivo:** **Elegir la prueba adecuada, revisar sus supuestos e informar el tamaño del efecto junto con el valor *p*.**
 
@@ -149,7 +149,7 @@ Al terminar, el participante podrá:
 1. Explicar H0/H1, el valor *p*, los errores tipo I y II, la potencia y el riesgo de las comparaciones múltiples.
 2. Comparar dos grupos con *t* de Welch, Mann-Whitney o permutación, según los datos.
 3. Probar proporciones y la independencia de dos variables categóricas.
-4. Comparar más de dos grupos con ANOVA, revisar la igualdad de varianzas y localizar diferencias con Tukey.
+4. Comparar más de dos grupos con el ANOVA de Welch por defecto, describir la dispersión con Levene sin que decida la prueba y localizar diferencias con Tukey.
 5. Reportar d de Cohen, V de Cramér y η², e interpretar su magnitud.
 
 **Agenda (120 min):**

@@ -47,8 +47,8 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 
 | Módulo | Temas | Notebooks |
 | :--- | :--- | :--- |
-| I. Datos y su calidad | *NumPy* y *pandas* esenciales; tipos de variables; sesgos de recolección; duplicados, inconsistencias y valores faltantes | `01`-`09` |
-| II. Describir y comparar | Estadística descriptiva; forma de la distribución; valores atípicos; agregación; relaciones; correlación vs. causalidad; visualización efectiva | `10`-`15` |
+| I. Datos y su calidad | *NumPy* y *pandas* esenciales; tendencia central y dispersión; tipos de variables; sesgos de recolección; duplicados, inconsistencias y valores faltantes | `01`-`10` |
+| II. Describir y comparar | Forma de la distribución; valores atípicos; agregación; relaciones; correlación vs. causalidad; visualización efectiva | `11`-`15` |
 | III. Inferencia estadística | Muestreo, error estándar, intervalos de confianza, *bootstrap*; pruebas *t*, proporciones, chi cuadrada, ANOVA; supuestos; tamaño del efecto | `16`-`22` |
 | IV. Del análisis al informe | EDA completo paso a paso; reproducibilidad; redacción y comunicación del informe de hallazgos | `23`-`26` |
 
@@ -63,13 +63,13 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 - [01_bienvenida_y_reglas_del_curso.ipynb](01_bienvenida_y_reglas_del_curso.ipynb)
 - [02_numpy_esencial.ipynb](02_numpy_esencial.ipynb)
 - [03_pandas_3_esencial.ipynb](03_pandas_3_esencial.ipynb)
-- [04_tipos_de_variables.ipynb](04_tipos_de_variables.ipynb)
-- [05_muestreo_y_sesgos_de_recoleccion.ipynb](05_muestreo_y_sesgos_de_recoleccion.ipynb)
-- [06_diccionario_de_datos.ipynb](06_diccionario_de_datos.ipynb)
-- [07_duplicados_e_inconsistencias.ipynb](07_duplicados_e_inconsistencias.ipynb)
-- [08_valores_faltantes.ipynb](08_valores_faltantes.ipynb)
-- [09_auditoria_de_calidad.ipynb](09_auditoria_de_calidad.ipynb)
-- [10_tendencia_central_y_dispersion.ipynb](10_tendencia_central_y_dispersion.ipynb)
+- [04_tendencia_central_y_dispersion.ipynb](04_tendencia_central_y_dispersion.ipynb)
+- [05_tipos_de_variables.ipynb](05_tipos_de_variables.ipynb)
+- [06_muestreo_y_sesgos_de_recoleccion.ipynb](06_muestreo_y_sesgos_de_recoleccion.ipynb)
+- [07_diccionario_de_datos.ipynb](07_diccionario_de_datos.ipynb)
+- [08_duplicados_e_inconsistencias.ipynb](08_duplicados_e_inconsistencias.ipynb)
+- [09_valores_faltantes.ipynb](09_valores_faltantes.ipynb)
+- [10_auditoria_de_calidad.ipynb](10_auditoria_de_calidad.ipynb)
 - [11_forma_de_la_distribucion.ipynb](11_forma_de_la_distribucion.ipynb)
 - [12_valores_atipicos_y_transformaciones.ipynb](12_valores_atipicos_y_transformaciones.ipynb)
 - [13_agregacion.ipynb](13_agregacion.ipynb)
@@ -91,15 +91,15 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 * `01` - Bienvenida, reglas del curso; arranque del *Codespace*.
 * `02` - *NumPy* esencial: arreglos, `dtype`, vectorización, *broadcasting*, máscaras y decisiones que cambian resultados (`ddof`, `NaN`, desbordamiento, flotantes).
 * `03` - *pandas* 3 esencial: *Copy-on-Write*, tipo `str`, `read_csv`, `info`, `describe`, `loc`/`iloc`, filtros, `assign` y faltantes silenciosos.
-* `04` - Tipos de variables: taxonomía, escalas de Stevens, `dtype` de *pandas* 3, `category`, tipos *nullable* y fechas.
-* `05` - Muestreo (población, marco, parámetro y estadístico; diseños comparados por simulación) y sesgos de recolección.
-* `06` - Ejercicio guiado: diccionario de datos de `penguins`.
-* `07` - Lista de verificación de calidad, duplicados exactos y por llave, inconsistencias de texto, categorías, rangos, centinelas y unidades.
-* `08` - Mecanismos de faltantes (MCAR, MAR, MNAR), perfil de faltantes, tratamiento e imputación y su efecto.
-* `09` - Auditoría de calidad de `titanic` y `penguins`; genera `data/penguins_limpio.csv`.
+* `04` - Tendencia central y dispersión: medidas clásicas y robustas (mediana, IQR, MAD).
+* `05` - Tipos de variables: taxonomía, escalas de Stevens, `dtype` de *pandas* 3, `category`, tipos *nullable* y fechas.
+* `06` - Muestreo (población, marco, parámetro y estadístico; diseños comparados por simulación) y sesgos de recolección.
+* `07` - Ejercicio guiado: diccionario de datos de `penguins`.
+* `08` - Lista de verificación de calidad, duplicados exactos y por llave, inconsistencias de texto, categorías, rangos, centinelas y unidades.
+* `09` - Mecanismos de faltantes (MCAR, MAR, MNAR), perfil de faltantes, tratamiento e imputación y su efecto.
+* `10` - Auditoría de calidad de `titanic` y `penguins`; genera `data/penguins_limpio.csv`.
 
 #### 🔹 Módulo II: Describir y comparar
-* `10` - Tendencia central y dispersión: medidas clásicas y robustas (mediana, IQR, MAD).
 * `11` - Forma de la distribución: asimetría, curtosis, multimodalidad; histograma, KDE, ECDF y *boxplot*.
 * `12` - Valores atípicos (IQR, *z*, *z* robusto), ¿error o valor real?, transformación logarítmica y ejercicio integrador.
 * `13` - Agregación: `groupby`/`agg`, `pivot_table`, `crosstab` y `melt`.
@@ -125,12 +125,12 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 
 #### 📁 Datos (`data/`)
 * `penguins.csv` - Palmer Penguins, dataset principal (notebooks `03` a `22`).
-* `penguins_limpio.csv` - versión limpia que genera `09_auditoria_de_calidad.ipynb` (se usa desde `10`; si falta, cada notebook la regenera).
+* `penguins_limpio.csv` - versión limpia que genera `10_auditoria_de_calidad.ipynb` (se usa desde `11`; si falta, cada notebook la regenera).
 * `titanic.csv` - apoyo (calidad, proporciones e inferencia).
 * `tips.csv` - apoyo (agregación, relaciones y pruebas).
 * `mpg.csv` - demostración de EDA completo (`23`) y práctica de reproducibilidad (`24`).
 
-Los CSV provienen de [`mwaskom/seaborn-data`](https://github.com/mwaskom/seaborn-data), el repositorio que usa `sns.load_dataset()`. En el CSV de `penguins`, `sex` viene como `MALE`/`FEMALE` (en `sns.load_dataset("penguins")` es `Male`/`Female`); `09_auditoria_de_calidad.ipynb` hace esa homologación.
+Los CSV provienen de [`mwaskom/seaborn-data`](https://github.com/mwaskom/seaborn-data), el repositorio que usa `sns.load_dataset()`. En el CSV de `penguins`, `sex` viene como `MALE`/`FEMALE` (en `sns.load_dataset("penguins")` es `Male`/`Female`); `10_auditoria_de_calidad.ipynb` hace esa homologación.
 
 ---
 

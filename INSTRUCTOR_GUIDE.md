@@ -14,17 +14,17 @@ En las agendas, las subsecciones marcadas con 📖 **Lectura opcional** se revis
 
 ### Sesión 1 · Módulo I: Datos y su calidad
 
-**Notebooks:** [`01_bienvenida_y_reglas_del_curso`](01_bienvenida_y_reglas_del_curso.ipynb), [`02_numpy_esencial`](02_numpy_esencial.ipynb), [`03_pandas_3_esencial`](03_pandas_3_esencial.ipynb), [`04_tipos_de_variables`](04_tipos_de_variables.ipynb), [`05_muestreo_y_sesgos_de_recoleccion`](05_muestreo_y_sesgos_de_recoleccion.ipynb), [`06_diccionario_de_datos`](06_diccionario_de_datos.ipynb).
+**Notebooks:** [`01_bienvenida_y_reglas_del_curso`](01_bienvenida_y_reglas_del_curso.ipynb), [`02_numpy_esencial`](02_numpy_esencial.ipynb), [`03_pandas_3_esencial`](03_pandas_3_esencial.ipynb), [`04_tendencia_central_y_dispersion`](04_tendencia_central_y_dispersion.ipynb), [`05_tipos_de_variables`](05_tipos_de_variables.ipynb).
 
-**Descripción:** En esta sesión se repasarán los fundamentos de *NumPy* y *pandas*, se clasificarán las variables por su tipo y por la forma en que se recolectaron, y se presentarán los cambios de *pandas* 3 que afectan al resto del curso.
+**Descripción:** En esta sesión se repasarán los fundamentos de *NumPy* y *pandas*, se explicarán los números que da `describe()` (medidas de tendencia central y de dispersión, clásicas y robustas), se clasificarán las variables por su tipo y se presentarán los cambios de *pandas* 3 que afectan al resto del curso.
 
-**Objetivo:** Cargar y explorar un *dataframe* con soltura, y **clasificar cada variable por su tipo y por cómo se recolectó**.
+**Objetivo:** Cargar y explorar un *dataframe* con soltura, **describir una variable con medidas de centro y de dispersión, y clasificar cada variable por su tipo**.
 
 Al terminar, el participante podrá:
 1. Usar arreglos de *NumPy*: `dtype`, operaciones vectorizadas, *broadcasting* y máscaras booleanas.
 2. Leer y explorar datos con *pandas* 3: `info`, `describe`, `loc`/`iloc`, filtros y `assign`.
-3. Distinguir variables numéricas (continuas/discretas), categóricas (nominales/ordinales) y fechas, y representarlas con el `dtype` correcto (`str`, `category`, tipos *nullable*).
-4. Reconocer sesgos de recolección: selección, supervivencia, no respuesta y medición.
+3. Calcular e interpretar media, mediana, moda, desviación estándar, IQR y MAD, y saber cuáles son robustas.
+4. Distinguir variables numéricas (continuas/discretas), categóricas (nominales/ordinales) y fechas, y representarlas con el `dtype` correcto (`str`, `category`, tipos *nullable*).
 
 **Agenda (120 min):**
 
@@ -33,46 +33,46 @@ Al terminar, el participante podrá:
 | 10 | Bienvenida, reglas del curso, arranque del *Codespace* | `01_bienvenida_y_reglas_del_curso` |
 | 15 | *NumPy*: repaso exprés y decisiones que cambian resultados | `02_numpy_esencial` |
 | 25 | *pandas*: repaso exprés, *pandas* 3 y decisiones al explorar | `03_pandas_3_esencial` |
-| 25 | Tipos de variables: taxonomía, escalas de medición y `dtype` | `04_tipos_de_variables` |
-| 30 | Muestreo y sesgos de recolección | `05_muestreo_y_sesgos_de_recoleccion` |
-| 15 | Ejercicio guiado (diccionario de datos) y cierre | `06_diccionario_de_datos` |
+| 30 | Tendencia central y dispersión: medidas clásicas y robustas | `04_tendencia_central_y_dispersion` |
+| 25 | Tipos de variables: taxonomía, escalas de medición y `dtype` | `05_tipos_de_variables` |
+| 15 | Ejercicio (clasificar las variables de `titanic`) y cierre | `05_tipos_de_variables` |
 
 ### Sesión 2 · Módulo I: Datos y su calidad
 
-**Notebooks:** [`07_duplicados_e_inconsistencias`](07_duplicados_e_inconsistencias.ipynb), [`08_valores_faltantes`](08_valores_faltantes.ipynb), [`09_auditoria_de_calidad`](09_auditoria_de_calidad.ipynb).
+**Notebooks:** [`06_muestreo_y_sesgos_de_recoleccion`](06_muestreo_y_sesgos_de_recoleccion.ipynb), [`07_diccionario_de_datos`](07_diccionario_de_datos.ipynb), [`08_duplicados_e_inconsistencias`](08_duplicados_e_inconsistencias.ipynb), [`09_valores_faltantes`](09_valores_faltantes.ipynb).
 
-**Descripción:** En esta sesión se auditará la calidad de un *dataset* (duplicados, inconsistencias de texto, rangos imposibles y unidades), se perfilarán los mecanismos de faltantes (MCAR, MAR, MNAR) y se compararán estrategias de tratamiento y su efecto en las distribuciones, usando `titanic` y `penguins`. Al final se genera `data/penguins_limpio.csv`.
+**Descripción:** En esta sesión se revisará cómo se recolectaron los datos y qué sesgos introduce el diseño, se construirá el diccionario de datos de `penguins`, se auditará la calidad de un *dataset* (duplicados, inconsistencias de texto, rangos imposibles y unidades), se perfilarán los mecanismos de faltantes (MCAR, MAR, MNAR) y se compararán estrategias de tratamiento y su efecto en las distribuciones.
 
-**Objetivo:** **Auditar la calidad de un *dataset* y elegir de forma justificada cómo tratar los faltantes.**
+**Objetivo:** **Reconocer cómo se recolectaron los datos, auditar su calidad y elegir de forma justificada cómo tratar los faltantes.**
 
 Al terminar, el participante podrá:
-1. Aplicar una lista de verificación de calidad a cualquier *dataset*.
-2. Detectar y resolver duplicados exactos y por llave.
-3. Corregir inconsistencias de texto, categorías mal escritas, rangos imposibles y unidades.
-4. Distinguir los mecanismos de faltantes (MCAR, MAR, MNAR) y perfilarlos.
-5. Comparar eliminación, imputación simple, imputación por grupo e indicador de faltante, y medir su efecto en las distribuciones.
+1. Reconocer sesgos de recolección: selección, supervivencia, no respuesta y medición.
+2. Documentar un *dataset* con un diccionario de datos.
+3. Aplicar una lista de verificación de calidad a cualquier *dataset*.
+4. Detectar y resolver duplicados exactos y por llave, y corregir inconsistencias de texto, categorías mal escritas, rangos imposibles y unidades.
+5. Distinguir los mecanismos de faltantes (MCAR, MAR, MNAR), perfilarlos y comparar eliminación, imputación simple, imputación por grupo e indicador de faltante, midiendo su efecto en las distribuciones.
 
 **Agenda (120 min):**
 
 | Min | Bloque | Notebook |
 |---|---|---|
-| 10 | Repaso y lista de verificación de calidad | `07_duplicados_e_inconsistencias` |
-| 20 | Duplicados: exactos y por llave | `07_duplicados_e_inconsistencias` |
-| 25 | Inconsistencias: texto, categorías, rangos imposibles, unidades | `07_duplicados_e_inconsistencias` |
-| 15 | Mecanismos de faltantes y cómo perfilarlos | `08_valores_faltantes` |
-| 30 | Tratamiento de faltantes y su efecto en las distribuciones | `08_valores_faltantes` |
-| 20 | Ejercicio (`titanic` + `penguins`) y cierre | `09_auditoria_de_calidad` |
+| 25 | Muestreo y sesgos de recolección | `06_muestreo_y_sesgos_de_recoleccion` |
+| 15 | Ejercicio guiado (diccionario de datos) | `07_diccionario_de_datos` |
+| 20 | Lista de verificación de calidad; duplicados exactos y por llave | `08_duplicados_e_inconsistencias` |
+| 20 | Inconsistencias: texto, categorías, rangos imposibles, unidades | `08_duplicados_e_inconsistencias` |
+| 15 | Mecanismos de faltantes y cómo perfilarlos | `09_valores_faltantes` |
+| 25 | Tratamiento de faltantes, su efecto en las distribuciones y cierre | `09_valores_faltantes` |
 
-### Sesión 3 · Módulo II: Describir y comparar
+### Sesión 3 · Módulos I y II: de la calidad a la descripción
 
-**Notebooks:** [`10_tendencia_central_y_dispersion`](10_tendencia_central_y_dispersion.ipynb), [`11_forma_de_la_distribucion`](11_forma_de_la_distribucion.ipynb), [`12_valores_atipicos_y_transformaciones`](12_valores_atipicos_y_transformaciones.ipynb).
+**Notebooks:** [`10_auditoria_de_calidad`](10_auditoria_de_calidad.ipynb), [`11_forma_de_la_distribucion`](11_forma_de_la_distribucion.ipynb), [`12_valores_atipicos_y_transformaciones`](12_valores_atipicos_y_transformaciones.ipynb).
 
-**Descripción:** En esta sesión se describirán distribuciones con medidas clásicas y robustas (media, mediana, desviación estándar, IQR y MAD), se analizará su forma (asimetría, curtosis y multimodalidad) con histogramas, KDE, ECDF y diagramas de caja, y se detectarán valores atípicos con la regla del IQR y el puntaje *z* robusto, usando `penguins_limpio`.
+**Descripción:** En esta sesión se aplicará la auditoría completa de calidad a `titanic` y `penguins` y se generará `data/penguins_limpio.csv`. Con ese archivo se analizará la forma de las distribuciones (asimetría, curtosis y multimodalidad) con histogramas, KDE, ECDF y diagramas de caja, y se detectarán valores atípicos con la regla del IQR y el puntaje *z* robusto.
 
-**Objetivo:** **Describir distribuciones con medidas robustas y detectar valores atípicos sin eliminarlos por reflejo.**
+**Objetivo:** **Cerrar la auditoría de calidad, describir la forma de una distribución y detectar valores atípicos sin eliminarlos por reflejo.**
 
 Al terminar, el participante podrá:
-1. Calcular e interpretar media, mediana, desviación estándar, IQR y MAD, y saber cuáles son robustas.
+1. Auditar un *dataset* completo con la lista de verificación y justificar cada decisión de limpieza.
 2. Describir la forma de una distribución (asimetría, curtosis, multimodalidad) y elegir la gráfica adecuada: histograma, KDE, ECDF o diagrama de caja.
 3. Detectar valores atípicos con la regla del IQR, el puntaje *z* y el puntaje *z* robusto, y decidir si son errores o valores reales.
 4. Aplicar una transformación logarítmica y explicar su efecto.
@@ -81,12 +81,11 @@ Al terminar, el participante podrá:
 
 | Min | Bloque | Notebook |
 |---|---|---|
-| 10 | Repaso: `penguins_limpio` | `10_tendencia_central_y_dispersion` |
-| 25 | Tendencia central y dispersión | `10_tendencia_central_y_dispersion` |
+| 30 | Auditoría de calidad (`titanic` + `penguins`) y `penguins_limpio` | `10_auditoria_de_calidad` |
 | 25 | Forma de la distribución | `11_forma_de_la_distribucion` |
 | 25 | Valores atípicos | `12_valores_atipicos_y_transformaciones` |
 | 15 | Transformaciones (log) | `12_valores_atipicos_y_transformaciones` |
-| 20 | Ejercicio integrador y cierre | `12_valores_atipicos_y_transformaciones` |
+| 25 | Ejercicio integrador y cierre | `12_valores_atipicos_y_transformaciones` |
 
 ### Sesión 4 · Módulo II: Describir y comparar
 
@@ -254,4 +253,4 @@ Al terminar, el participante podrá:
 - Diferencias de entorno: usar Codespaces por defecto (Python 3.12 y versiones mínimas `>=` en `requirements.txt`, con *pandas* 3).
 - Codespace lento la primera vez: pedir a los alumnos que lo creen antes de la sesión 1.
 - Tiempo insuficiente: priorizar ejercicios y dejar los retos como práctica.
-- `penguins_limpio.csv` desalineado: `09_auditoria_de_calidad.ipynb` lo regenera y los *notebooks* `10` en adelante lo recrean si no existe; la versión del repositorio es la de referencia.
+- `penguins_limpio.csv` desalineado: `10_auditoria_de_calidad.ipynb` lo regenera y los *notebooks* `11` en adelante lo recrean si no existe; la versión del repositorio es la de referencia.

@@ -1,22 +1,22 @@
 # Instructor Guide - Py401
 
-Guía operativa para impartir **Py401 · EDA Práctico** con consistencia técnica y pedagógica. Fuente: mapa de sesiones del curso. El material no fija fechas ni horarios para que sirva en cualquier edición.
+Guía operativa para impartir **Py401 · EDA Práctico** con consistencia técnica y pedagógica. Fuente: mapa de bloques del curso. El material no fija fechas ni horarios para que sirva en cualquier edición.
 
-## Estructura (8 sesiones de 2 horas, 26 *notebooks*)
+## Estructura (8 bloques de 2 horas, 26 *notebooks*)
 
-Los *notebooks* se numeran por tema, en orden, a lo largo de todo el curso; cada sesión abarca varios, como indica la agenda de cada sesión más abajo.
+Los *notebooks* se numeran por tema, en orden, a lo largo de todo el curso; cada bloque abarca varios, como indica la agenda de cada bloque más abajo.
 
 Cada *notebook* es independiente: tiene su propia celda de preparación (bibliotecas, `DATA` con `os.path.join` y semilla `401`) y, cuando necesita algo de un *notebook* anterior, lo vuelve a crear en la celda "Objetos de los *notebooks* anteriores". Los temas con ejercicios tienen su versión resuelta en `soluciones/NN_tema_soluciones.ipynb`; `01`, `23` y `25` no tienen ejercicios ni soluciones.
 
-## Objetivos y agenda por sesión
+## Objetivos y agenda por bloque
 
 En las agendas, las subsecciones marcadas con 📖 **Lectura opcional** se revisan en casa. Los ejercicios que no alcancen a resolverse en clase quedan como práctica; los retos son siempre opcionales.
 
-### Sesión 1 · Módulo I: Datos y su calidad
+### Bloque 1 · Módulo I: Datos y su calidad
 
 **Notebooks:** [`01_bienvenida_y_reglas_del_curso`](01_bienvenida_y_reglas_del_curso.ipynb), [`02_numpy_esencial`](02_numpy_esencial.ipynb), [`03_pandas_3_esencial`](03_pandas_3_esencial.ipynb), [`04_tendencia_central_y_dispersion`](04_tendencia_central_y_dispersion.ipynb), [`05_tipos_de_variables`](05_tipos_de_variables.ipynb).
 
-**Descripción:** En esta sesión se repasarán los fundamentos de *NumPy* y *pandas*, se explicarán los números que da `describe()` (medidas de tendencia central y de dispersión, clásicas y robustas), se clasificarán las variables por su tipo y se presentarán los cambios de *pandas* 3 que afectan al resto del curso.
+**Descripción:** En este bloque se repasarán los fundamentos de *NumPy* y *pandas*, se explicarán los números que da `describe()` (medidas de tendencia central y de dispersión, clásicas y robustas), se clasificarán las variables por su tipo y se presentarán los cambios de *pandas* 3 que afectan al resto del curso.
 
 **Objetivo:** Cargar y explorar un *dataframe* con soltura, **describir una variable con medidas de centro y de dispersión, y clasificar cada variable por su tipo**.
 
@@ -28,7 +28,7 @@ Al terminar, el participante podrá:
 
 **Agenda (120 min):**
 
-| Min | Bloque | Notebook |
+| Min | Tema | Notebook |
 |---|---|---|
 | 10 | Bienvenida, reglas del curso, arranque del *Codespace* | `01_bienvenida_y_reglas_del_curso` |
 | 15 | *NumPy*: repaso exprés y decisiones que cambian resultados | `02_numpy_esencial` |
@@ -37,11 +37,11 @@ Al terminar, el participante podrá:
 | 25 | Tipos de variables: taxonomía, escalas de medición y `dtype` | `05_tipos_de_variables` |
 | 15 | Ejercicio (clasificar las variables de `titanic`) y cierre | `05_tipos_de_variables` |
 
-### Sesión 2 · Módulo I: Datos y su calidad
+### Bloque 2 · Módulo I: Datos y su calidad
 
 **Notebooks:** [`06_muestreo_y_sesgos_de_recoleccion`](06_muestreo_y_sesgos_de_recoleccion.ipynb), [`07_diccionario_de_datos`](07_diccionario_de_datos.ipynb), [`08_duplicados_e_inconsistencias`](08_duplicados_e_inconsistencias.ipynb), [`09_valores_faltantes`](09_valores_faltantes.ipynb).
 
-**Descripción:** En esta sesión se revisará cómo se recolectaron los datos y qué sesgos introduce el diseño, se construirá el diccionario de datos de `penguins`, se auditará la calidad de un *dataset* (duplicados, inconsistencias de texto, rangos imposibles y unidades), se perfilarán los mecanismos de faltantes (MCAR, MAR, MNAR) y se compararán estrategias de tratamiento y su efecto en las distribuciones.
+**Descripción:** En este bloque se revisará cómo se recolectaron los datos y qué sesgos introduce el diseño, se construirá el diccionario de datos de `penguins`, se auditará la calidad de un *dataset* (duplicados, inconsistencias de texto, rangos imposibles y unidades), se perfilarán los mecanismos de faltantes (MCAR, MAR, MNAR) y se compararán estrategias de tratamiento y su efecto en las distribuciones.
 
 **Objetivo:** **Reconocer cómo se recolectaron los datos, auditar su calidad y elegir de forma justificada cómo tratar los faltantes.**
 
@@ -54,7 +54,7 @@ Al terminar, el participante podrá:
 
 **Agenda (120 min):**
 
-| Min | Bloque | Notebook |
+| Min | Tema | Notebook |
 |---|---|---|
 | 25 | Muestreo y sesgos de recolección | `06_muestreo_y_sesgos_de_recoleccion` |
 | 15 | Ejercicio guiado (diccionario de datos) | `07_diccionario_de_datos` |
@@ -63,11 +63,11 @@ Al terminar, el participante podrá:
 | 15 | Mecanismos de faltantes y cómo perfilarlos | `09_valores_faltantes` |
 | 25 | Tratamiento de faltantes, su efecto en las distribuciones y cierre | `09_valores_faltantes` |
 
-### Sesión 3 · Módulos I y II: de la calidad a la descripción
+### Bloque 3 · Módulos I y II: de la calidad a la descripción
 
 **Notebooks:** [`10_auditoria_de_calidad`](10_auditoria_de_calidad.ipynb), [`11_forma_de_la_distribucion`](11_forma_de_la_distribucion.ipynb), [`12_valores_atipicos_y_transformaciones`](12_valores_atipicos_y_transformaciones.ipynb).
 
-**Descripción:** En esta sesión se aplicará la auditoría completa de calidad a `titanic` y `penguins` y se generará `data/penguins_limpio.csv`. Con ese archivo se analizará la forma de las distribuciones (asimetría, curtosis y multimodalidad) con histogramas, KDE, ECDF y diagramas de caja, y se detectarán valores atípicos con la regla del IQR y el puntaje *z* robusto.
+**Descripción:** En este bloque se aplicará la auditoría completa de calidad a `titanic` y `penguins` y se generará `data/penguins_limpio.csv`. Con ese archivo se analizará la forma de las distribuciones (asimetría, curtosis y multimodalidad) con histogramas, KDE, ECDF y diagramas de caja, y se detectarán valores atípicos con la regla del IQR y el puntaje *z* robusto.
 
 **Objetivo:** **Cerrar la auditoría de calidad, describir la forma de una distribución y detectar valores atípicos sin eliminarlos por reflejo.**
 
@@ -79,7 +79,7 @@ Al terminar, el participante podrá:
 
 **Agenda (120 min):**
 
-| Min | Bloque | Notebook |
+| Min | Tema | Notebook |
 |---|---|---|
 | 30 | Auditoría de calidad (`titanic` + `penguins`) y `penguins_limpio` | `10_auditoria_de_calidad` |
 | 25 | Forma de la distribución | `11_forma_de_la_distribucion` |
@@ -87,11 +87,11 @@ Al terminar, el participante podrá:
 | 15 | Transformaciones (log) | `12_valores_atipicos_y_transformaciones` |
 | 25 | Ejercicio integrador y cierre | `12_valores_atipicos_y_transformaciones` |
 
-### Sesión 4 · Módulo II: Describir y comparar
+### Bloque 4 · Módulo II: Describir y comparar
 
 **Notebooks:** [`13_agregacion`](13_agregacion.ipynb), [`14_relaciones_entre_variables`](14_relaciones_entre_variables.ipynb), [`15_visualizacion_efectiva`](15_visualizacion_efectiva.ipynb).
 
-**Descripción:** En esta sesión se resumirán datos por grupos (`groupby`, `pivot_table`, `crosstab`, `melt`), se medirán relaciones entre variables con las correlaciones de Pearson y Spearman sin confundir correlación con causalidad (confusores y paradoja de Simpson) y se construirán gráficas claras con *Matplotlib* y *Seaborn*.
+**Descripción:** En este bloque se resumirán datos por grupos (`groupby`, `pivot_table`, `crosstab`, `melt`), se medirán relaciones entre variables con las correlaciones de Pearson y Spearman sin confundir correlación con causalidad (confusores y paradoja de Simpson) y se construirán gráficas claras con *Matplotlib* y *Seaborn*.
 
 **Objetivo:** **Resumir por grupos, medir relaciones entre variables y comunicarlas con gráficas claras, sin confundir correlación con causalidad.**
 
@@ -103,19 +103,19 @@ Al terminar, el participante podrá:
 
 **Agenda (110 min):**
 
-| Min | Bloque | Notebook |
+| Min | Tema | Notebook |
 |---|---|---|
 | 10 | Repaso | `13_agregacion` |
 | 25 | Agregación | `13_agregacion` |
 | 25 | Relaciones entre variables | `14_relaciones_entre_variables` |
 | 30 | Visualización efectiva | `15_visualizacion_efectiva` |
-| 20 | Ejercicio de la sesión | `15_visualizacion_efectiva` |
+| 20 | Ejercicio del bloque | `15_visualizacion_efectiva` |
 
-### Sesión 5 · Módulo III: Inferencia estadística
+### Bloque 5 · Módulo III: Inferencia estadística
 
 **Notebooks:** [`16_distribucion_muestral`](16_distribucion_muestral.ipynb), [`17_error_estandar_e_intervalos_de_confianza`](17_error_estandar_e_intervalos_de_confianza.ipynb), [`18_bootstrap_e_interpretacion_de_intervalos`](18_bootstrap_e_interpretacion_de_intervalos.ipynb).
 
-**Descripción:** En esta sesión se cuantificará la incertidumbre de una estimación: se simulará la distribución muestral con *NumPy*, se calcularán errores estándar e intervalos de confianza para medias y proporciones con *SciPy* y *statsmodels*, y se construirán intervalos *bootstrap* con `scipy.stats.bootstrap`, usando `penguins`.
+**Descripción:** En este bloque se cuantificará la incertidumbre de una estimación: se simulará la distribución muestral con *NumPy*, se calcularán errores estándar e intervalos de confianza para medias y proporciones con *SciPy* y *statsmodels*, y se construirán intervalos *bootstrap* con `scipy.stats.bootstrap`, usando `penguins`.
 
 **Objetivo:** **Acompañar cada estimación con su incertidumbre, con fórmulas clásicas y con remuestreo, e interpretarla correctamente.**
 
@@ -127,20 +127,20 @@ Al terminar, el participante podrá:
 
 **Agenda (120 min):**
 
-| Min | Bloque | Notebook |
+| Min | Tema | Notebook |
 |---|---|---|
 | 10 | Repaso: errores frecuentes en un EDA descriptivo | `16_distribucion_muestral` |
 | 30 | Distribución muestral: ley de los grandes números, teorema central del límite, tamaño de muestra y diseño | `16_distribucion_muestral` |
 | 25 | Error estándar e intervalos de confianza | `17_error_estandar_e_intervalos_de_confianza` |
 | 25 | *Bootstrap* | `18_bootstrap_e_interpretacion_de_intervalos` |
 | 15 | Interpretación correcta de un IC | `18_bootstrap_e_interpretacion_de_intervalos` |
-| 20 | Ejercicio de la sesión y cierre | `18_bootstrap_e_interpretacion_de_intervalos` |
+| 20 | Ejercicio del bloque y cierre | `18_bootstrap_e_interpretacion_de_intervalos` |
 
-### Sesión 6 · Módulo III: Inferencia estadística
+### Bloque 6 · Módulo III: Inferencia estadística
 
 **Notebooks:** [`19_logica_del_contraste`](19_logica_del_contraste.ipynb), [`20_pruebas_para_dos_grupos`](20_pruebas_para_dos_grupos.ipynb), [`21_proporciones_y_mas_de_dos_grupos`](21_proporciones_y_mas_de_dos_grupos.ipynb), [`22_tamano_del_efecto`](22_tamano_del_efecto.ipynb).
 
-**Descripción:** En esta sesión se aplicarán pruebas *t* de Student y de Welch, Mann-Whitney, pruebas por permutación, la prueba *z* de proporciones, la chi cuadrada de independencia y el ANOVA de una vía de Welch y Tukey (con Levene solo como descripción de la dispersión), siempre acompañadas del tamaño del efecto (d de Cohen, V de Cramér y η²), usando `penguins`, `titanic` y `tips`.
+**Descripción:** En este bloque se aplicarán pruebas *t* de Student y de Welch, Mann-Whitney, pruebas por permutación, la prueba *z* de proporciones, la chi cuadrada de independencia y el ANOVA de una vía de Welch y Tukey (con Levene solo como descripción de la dispersión), siempre acompañadas del tamaño del efecto (d de Cohen, V de Cramér y η²), usando `penguins`, `titanic` y `tips`.
 
 **Objetivo:** **Elegir la prueba adecuada, revisar sus supuestos e informar el tamaño del efecto junto con el p-value.**
 
@@ -153,14 +153,14 @@ Al terminar, el participante podrá:
 
 **Agenda (120 min):**
 
-| Min | Bloque | Notebook |
+| Min | Tema | Notebook |
 |---|---|---|
 | 10 | Repaso | `19_logica_del_contraste` |
 | 20 | La lógica del contraste | `19_logica_del_contraste` |
 | 25 | Dos grupos | `20_pruebas_para_dos_grupos` |
 | 20 | Proporciones y variables categóricas | `21_proporciones_y_mas_de_dos_grupos` |
 | 25 | Más de dos grupos | `21_proporciones_y_mas_de_dos_grupos` |
-| 20 | Tamaño del efecto y ejercicio de la sesión | `22_tamano_del_efecto` |
+| 20 | Tamaño del efecto y ejercicio del bloque | `22_tamano_del_efecto` |
 
 **Notas didácticas del Módulo III:**
 * El 19 presenta, antes del p-value, el ciclo de una investigación, la diferencia entre experimento y estudio observacional, la tabla del alcance de la inferencia y la regla de una H0 y una H1 por prueba (en el ANOVA, H1 es «al menos una media difiere»).
@@ -168,11 +168,11 @@ Al terminar, el participante podrá:
 * El 21 construye por permutación la distribución de la chi cuadrada (clase y supervivencia) y la de *F* (propina porcentual por día) antes de compararlas con las curvas teóricas. El cálculo del margen de Tukey (*q* entre la raíz de 2) quedó en un 📖 *Para profundizar* opcional.
 * El 22 presenta en el cuerpo la diferencia de proporciones, el riesgo relativo y la razón de momios (sexo y supervivencia), antes del ejercicio de viajar solo.
 
-### Sesión 7 · Módulo IV: Del análisis al informe
+### Bloque 7 · Módulo IV: Del análisis al informe
 
 **Notebooks:** [`23_eda_completo_con_mpg`](23_eda_completo_con_mpg.ipynb), [`24_reproducibilidad_de_un_eda`](24_reproducibilidad_de_un_eda.ipynb).
 
-**Descripción:** En esta sesión se recorrerá de principio a fin un flujo de EDA reproducible sobre `mpg`: pregunta, auditoría de calidad, limpieza, distribuciones, relaciones, una prueba con tamaño del efecto y conclusiones. Después se revisarán las buenas prácticas de reproducibilidad (*Restart & Run All*, semillas, rutas relativas, datos crudos intactos, funciones reutilizables y `requirements.txt`) y se aplicarán con ejercicios sobre `mpg`.
+**Descripción:** En este bloque se recorrerá de principio a fin un flujo de EDA reproducible sobre `mpg`: pregunta, auditoría de calidad, limpieza, distribuciones, relaciones, una prueba con tamaño del efecto y conclusiones. Después se revisarán las buenas prácticas de reproducibilidad (*Restart & Run All*, semillas, rutas relativas, datos crudos intactos, funciones reutilizables y `requirements.txt`) y se aplicarán con ejercicios sobre `mpg`.
 
 **Objetivo:** **Recorrer un EDA completo y reproducible sobre un *dataset* nuevo, tomando y documentando cada decisión.**
 
@@ -184,18 +184,18 @@ Al terminar, el participante podrá:
 
 **Agenda (120 min):**
 
-| Min | Bloque | Notebook |
+| Min | Tema | Notebook |
 |---|---|---|
 | 10 | Estructura de un EDA | `23_eda_completo_con_mpg` |
 | 60 | Demostración en vivo con `mpg` | `23_eda_completo_con_mpg` |
 | 15 | Buenas prácticas de reproducibilidad | `24_reproducibilidad_de_un_eda` |
 | 35 | Taller: reproducibilidad aplicada a `mpg` (preguntas, auditoría y ejercicios) | `24_reproducibilidad_de_un_eda` |
 
-### Sesión 8 · Módulo IV: Del análisis al informe
+### Bloque 8 · Módulo IV: Del análisis al informe
 
 **Notebooks:** [`25_estructura_del_informe_y_comunicacion`](25_estructura_del_informe_y_comunicacion.ipynb), [`26_del_notebook_al_informe`](26_del_notebook_al_informe.ipynb).
 
-**Descripción:** En esta sesión se convertirá el análisis en un informe claro, honesto sobre sus límites y orientado a la decisión: estructura del informe, cómo comunicar intervalos de confianza y tamaños del efecto en lenguaje llano, la gráfica final, la exportación con `nbconvert` y la revisión entre pares. Al final se hacen las **preguntas de repaso** y se cierra el curso.
+**Descripción:** En este bloque se convertirá el análisis en un informe claro, honesto sobre sus límites y orientado a la decisión: estructura del informe, cómo comunicar intervalos de confianza y tamaños del efecto en lenguaje llano, la gráfica final, la exportación con `nbconvert` y la revisión entre pares. Al final se hacen las **preguntas de repaso** y se cierra el curso.
 
 **Objetivo:** **Convertir un análisis exploratorio en un informe de hallazgos claro, verificable y sin afirmaciones que los datos no respaldan.**
 
@@ -208,7 +208,7 @@ Al terminar, el participante podrá:
 
 **Agenda (120 min):**
 
-| Min | Bloque | Notebook |
+| Min | Tema | Notebook |
 |---|---|---|
 | 10 | Repaso | `25_estructura_del_informe_y_comunicacion` |
 | 25 | Estructura del informe | `25_estructura_del_informe_y_comunicacion` |
@@ -226,7 +226,7 @@ Al terminar, el participante podrá:
 
 ## Práctica
 
-- **Práctica:** los ejercicios de cada *notebook* se trabajan en clase. La Sesión 8 cierra con preguntas de repaso de los Módulos III y IV (`26_del_notebook_al_informe`).
+- **Práctica:** los ejercicios de cada *notebook* se trabajan en clase. El bloque 8 cierra con preguntas de repaso de los Módulos III y IV (`26_del_notebook_al_informe`).
 
 ### Reglas sugeridas
 
@@ -235,22 +235,22 @@ Al terminar, el participante podrá:
 ## Checklist previa a clase
 
 - Codespace creado desde `main` y dependencias instaladas (`postCreateCommand`).
-- Los *notebooks* de la sesión y sus versiones en `soluciones/` corren de principio a fin (workflow `notebooks-smoke.yml` en verde).
+- Los *notebooks* del bloque y sus versiones en `soluciones/` corren de principio a fin (workflow `notebooks-smoke.yml` en verde).
 - Datos disponibles en `data/` (no se necesita internet).
-- Material de la sesión publicado.
+- Material del bloque publicado.
 - Formulario de pase de lista abierto durante los primeros 30 minutos y al cierre.
 
-## Checklist de cierre de sesión
+## Checklist de cierre de bloque
 
-- Se cubrieron los objetivos de la sesión.
+- Se cubrieron los objetivos del bloque.
 - Asistencia registrada en la hoja (P / F / R) con el reporte de Meet y el formulario.
 - Grabación y práctica publicadas.
-- Aviso privado a quien acumule su primera falta; contactar antes de la sesión 3 a quien falte a las sesiones 1 y 2.
+- Aviso privado a quien acumule su primera falta; contactar antes del bloque 3 a quien falte a los bloques 1 y 2.
 - Dudas frecuentes registradas para mejorar los notebooks.
 
 ## Riesgos comunes y mitigación
 
 - Diferencias de entorno: usar Codespaces por defecto (Python 3.12 y versiones mínimas `>=` en `requirements.txt`, con *pandas* 3).
-- Codespace lento la primera vez: pedir a los alumnos que lo creen antes de la sesión 1.
+- Codespace lento la primera vez: pedir a los alumnos que lo creen antes del bloque 1.
 - Tiempo insuficiente: priorizar ejercicios y dejar los retos como práctica.
 - `penguins_limpio.csv` desalineado: `10_auditoria_de_calidad.ipynb` lo regenera y los *notebooks* `11` en adelante lo recrean si no existe; la versión del repositorio es la de referencia.

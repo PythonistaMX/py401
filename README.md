@@ -27,7 +27,7 @@ Este curso asume conocimiento previo de *Python* y nociones básicas de *NumPy* 
 
 ## 🚀 Acerca del Curso
 
-Un curso práctico de **8 sesiones en vivo de 2 horas** (16 horas) sobre notebooks de *Jupyter* que corren en **GitHub Codespaces**. Al completarlo serás capaz de:
+Un curso práctico de **8 bloques en vivo de 2 horas** (16 horas) sobre notebooks de *Jupyter* que corren en **GitHub Codespaces**. Al completarlo serás capaz de:
 
 * **Auditar la calidad de los datos:** tipos de variables, duplicados, inconsistencias, valores faltantes y sesgos de recolección.
 * **Describir distribuciones con criterio:** medidas robustas, forma de la distribución y valores atípicos.
@@ -37,13 +37,13 @@ Un curso práctico de **8 sesiones en vivo de 2 horas** (16 horas) sobre noteboo
 * **Contrastar hipótesis con responsabilidad:** supuestos, p-value y tamaño del efecto.
 * **Comunicar hallazgos:** un EDA reproducible y un informe claro sobre sus límites.
 
-Todo el entorno se ejecuta en la nube mediante **GitHub Codespaces**, sin necesidad de instalación local, y los datos de las sesiones vienen incluidos en `data/` (no se necesita internet para los notebooks).
+Todo el entorno se ejecuta en la nube mediante **GitHub Codespaces**, sin necesidad de instalación local, y los datos de los bloques vienen incluidos en `data/` (no se necesita internet para los notebooks).
 
 ---
 
 ## 📅 Temario y Estructura
 
-El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. Los *notebooks* se numeran por tema y cada sesión abarca varios.
+El curso consta de **8 bloques en vivo de 2 horas**, divididos en 4 módulos. Los *notebooks* se numeran por tema y cada bloque abarca varios.
 
 | Módulo | Temas | Notebooks |
 | :--- | :--- | :--- |
@@ -104,7 +104,7 @@ El curso consta de **8 sesiones en vivo de 2 horas**, divididas en 4 módulos. L
 * `12` - Valores atípicos (IQR, *z*, *z* robusto), ¿error o valor real?, transformación logarítmica y ejercicio integrador.
 * `13` - Agregación: `groupby`/`agg`, `pivot_table`, `crosstab` y `melt`.
 * `14` - Relaciones entre variables: Pearson y Spearman, correlación vs. causalidad, confusores y paradoja de Simpson.
-* `15` - Visualización efectiva con *Matplotlib* y *Seaborn*; ejercicio de la sesión.
+* `15` - Visualización efectiva con *Matplotlib* y *Seaborn*; ejercicio del bloque.
 
 #### 🔹 Módulo III: Inferencia estadística
 * `16` - Distribución muestral: ley de los grandes números, teorema central del límite, tamaño de muestra y diseño estratificado.
